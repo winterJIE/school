@@ -1,5 +1,6 @@
-CMMS
-====
+school
+======
 
-Chinese Medicine Management System
+thanks github
+use bootstrap jquery seajs
 
