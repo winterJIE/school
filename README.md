@@ -1,6 +1,8 @@
 school
 ======
 
-thanks github
+##thanks github##
+
+
 use bootstrap jquery seajs
 
