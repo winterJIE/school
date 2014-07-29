@@ -1,0 +1,19 @@
+{
+  "name": "school",
+  "description": "school",
+  "author": {
+    "name": "winter"
+  },
+	"dependencies": {
+		"grunt": "*",
+		"grunt-contrib-less": "*",
+		"grunt-contrib-cssmin": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-pngmin": "*"
+	},
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:winterJIE/school.git"
+    }
+}

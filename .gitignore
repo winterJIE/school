@@ -1,0 +1,3 @@
+# git ignore some file.
+node_modules/
+.idea/
