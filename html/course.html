@@ -1,37 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <title>一品私塾</title>
-    <!-- style -->
-    <link href="../css/lib/bootstrap-3.0.3/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="../css/css/school.css" rel="stylesheet">
-  </head>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>一品私塾</title>
+  	<link href="../css/css/school.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../css/css/course.css">
+	<link href="../css/lib/bootstrap-3.0.3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
 <body>
-  <header id="header">
+	<div class="top">
+		<div class="topContent">
+			<span>欢迎致电: 028-12345678</span>
+			<a href="#"><img src="/images/qq.png" /></a>
+			<a href="#"><img src="/images/weibo.png" /></a>
+			<a href="#"><img src="/images/weixin.png" /></a>
+			<span class="topRight"><a href="#">登录</a> | <a href="#">立即注册</a></span>
+		</div>
+	</div><!-- top end -->
 
-  </header>
+	<div class="logos">
+		<div class="nav">
+			<img src="../images/logo.png">
+			<ul>
+				<li><a href="#">关于一品</a><span></span></li>
+				<li><a href="#">一品咨询</a><span></span></li>
+				<li><a href="#">一品课程</a><span></span></li>
+				<li><a href="#">一品教学</a><span></span></li>
+				<li><a href="#">一品资源</a><span></span></li>
+				<li><a href="#">一品论坛</a><span></span></li>
+			</ul>
+		</div>
+	</div><!-- logo end -->
+	
+	<section id="main">
+	<div class="wrap">
+		<div class="sideBar">
+			<div class="sideBarTitle"><h2>一品课程</h2></div>
+			<ul>
+				<li><a href="#">名师精品小班<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+				<li><a href="#">3-6人超精品班<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+				<li><a href="#">一对一教学<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+				<li><a href="#">小升初名校冲刺<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+				<li><a href="#">初升高名校冲刺<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+				<li><a href="#">特色课程<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+				<li><a href="#">托管<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+			</ul>
+		</div>
 
-  <section id="main">
+		<div class="content">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="#">首页</a><b>></b></li>
+					<li><a href="#">一品课程</a><b>></b></li>
+					<form>
+					<li>
+						<select class="lectureType">
+							<option>全部</option>
+							<option>全部</option>
+						</select>
+						<b>></b>
+					</li>
+					<li>
+						<select class="lecture">
+							<option>语文</option>
+							<option>数学</option>
+						</select>
+						<b>></b>
+					</li>
+					<li>
+						<input type="text" placeholder="输入您要查找的内容" />
+					</li>
+					</form>
+				</ul>
+			</div><!-- breadcrumb end -->
 
-  </section>
+			<span class="introTitle">名师精品小班</span>
+			<div class="intro">
+				<img src="../images/1.png" />
+				<p>
+				班级的班长，策划在全校有很大影响的活动，在各种商业竞赛中获奖。她来咨询的原因，也是因为「拖延症」。她总是把论文和考试拖到最后几晚熬通宵，而她的成绩却比那些按部就班的同学还好。但她很不喜欢这种焦虑的感觉，也担心这样的拖延症会让她有一天因为过度疲劳挂了。
+	当我问她拖延到最后并完成任务的感觉时，她说：「战斗和胜利。」
+	「但是也很累。」她补充说
+				</p>
+			</div><!-- intro end -->
 
-  <footer id="footer">
-    <div id="footer_bot">
-      <div class="footer_wrapper">
-        <label>© 2013. copyright.</label>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/lib/jquery.js"></script>
+			<h3>微课</h3>
+			<div class="redbar"></div>
+			<div class="weike">
+				<div class="courseItem">
+					<img src="../images/2.png" />
+					<div class="itemInfo">
+						<h5 class="courseName">代码大全</h5>
+						<p>w3school</p>
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="studentNum">12345</span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<button>免费</button>
+					</div>
 
-  <script src="../js/lib/seajs/sea.js"
+					<!-- courseUp，鼠标hover时显示，遮盖courseItem -->
+					<div class="courseUp">
+						<h5>课程</h5>
+						<p>courseUp，鼠标hover时显示，遮盖courseItem</p>
+						<button>查看课程</a>
+					</div><!-- courseUp end -->
+				</div> <!-- course item end -->
+				<div class="courseItem">
+					<img src="../images/2.png" />
+					<div class="itemInfo">
+					<h5 class="courseName">hello world</h5>
+					<p>w3school</p>
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="studentNum">12345</span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<button>免费</button>
+					</div>
+					<div class="courseUp">
+						<h5>课程</h5>
+						<p>courseUpItem
+						courseUp，鼠标hover时显示，遮盖courseItem</p>
+						<button>查看课程</button>
+					</div><!-- courseUp end -->
+				</div> <!-- course item end -->
+				<div class="courseItem">
+					<img src="../images/2.png" />
+					<div class="itemInfo">
+					<h5 class="courseName">hello world</h5>
+					<p>w3school</p>
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="studentNum">12345</span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<button>免费</button>
+					</div>
+
+<div class="courseUp">
+						<h5>课程</h5>
+						<p>courseUp，鼠标hover时显示，遮盖courseItem</p>
+						<button>查看课程</button>
+					</div><!-- courseUp end -->
+				</div> <!-- course item end -->
+				<div class="courseItem">
+					<img src="../images/2.png" />
+					<div class="itemInfo">
+					<h5 class="courseName">hello world</h5>
+					<p>w3school</p>
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="studentNum">12345</span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<button>免费</button>
+					</div>
+					<div class="courseUp">
+						<h5>课程</h5>
+						<p>courseUp，鼠标hover时显示，遮盖courseItem</p>
+						<button>查看课程</button>
+					</div><!-- courseUp end -->
+				</div> <!-- course item end -->
+				<div class="courseItem">
+					<img src="../images/2.png" />
+					<div class="itemInfo">
+					<h5 class="courseName">hello world</h5>
+					<p>w3school</p>
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="studentNum">12345</span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<button>免费</button>
+					</div>
+					<div class="courseUp">
+						<h5>课程</h5>
+						<p>courseUp，鼠标hover时显示，遮盖courseItem</p>
+						<button>查看课程</button>
+					</div><!-- courseUp end -->
+				</div> <!-- course item end -->
+			</div> <!-- weike end -->
+
+			<h3>线下课堂</h3>
+			<div class="redbar"></div>
+			<div class="offlineCourse">
+				<div class="courseItem">
+					<img src="../images/2.png" />
+					<div class="itemInfo">
+					<h5 class="courseName">hello world</h5>
+					<p>w3school</p>
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="studentNum">12345</span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<button>免费</button>
+					</div>
+					<div class="courseUp">
+						<h5>课程</h5>
+						<p>courseUp，鼠标hover时显示，遮盖courseItem</p>
+						<button>查看课程</button>
+					</div><!-- courseUp end -->
+				</div> <!-- course item end -->
+				<div class="courseItem">
+					<img src="../images/2.png" />
+					<div class="itemInfo">
+					<h5 class="courseName">hello world</h5>
+					<p>w3school</p>
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="studentNum">12345</span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<button>免费</button>
+					</div>
+					<div class="courseUp">
+						<h5>课程</h5>
+						<p>courseUp，鼠标hover时显示，遮盖courseItem</p>
+						<button>查看课程</button>
+					</div><!-- courseUp end -->
+				</div> <!-- course item end -->
+				<div class="courseItem">
+					<img src="../images/2.png" />
+					<div class="itemInfo">
+					<h5 class="courseName">hello world</h5>
+					<p>w3school</p>
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="studentNum">12345</span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<button>免费</button>
+					</div>
+					<div class="courseUp">
+						<h5>课程</h5>
+						<p>courseUp，鼠标hover时显示，遮盖courseItem</p>
+						<button>查看课程</button>
+					</div><!-- courseUp end -->
+				</div> <!-- course item end -->
+				<div class="courseItem">
+					<img src="../images/2.png" />
+					<div class="itemInfo">
+					<h5 class="courseName">hello world</h5>
+					<p>w3school</p>
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="studentNum">12345</span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<span class="glyphicon glyphicon-star-empty"></span>
+						<button>免费</button>
+					</div>
+					<div class="courseUp">
+						<h5>课程</h5>
+						<p>courseUp，鼠标hover时显示，遮盖courseItem</p>
+						<button>查看课程</button>
+					</div><!-- courseUp end -->
+				</div> <!-- course item end -->
+			</div> <!-- offlineCourse end -->
+		</div><!-- content end -->
+
+	</div><!-- wrap end -->
+	</section>
+	
+	<div class="floatSide">
+		<a href="javascript::;" id="server"></a>
+		<a href="javascript::;" id="weixin"></a>
+		<a href="#" id="up"></a>
+		<a href="javascript::;" id="qrcode"></a>
+	</div>
+
+	<footer class="footer">
+		<div id="footer_bot">
+			  <div class="footer_wrapper">
+					<label>© 2013. copyright.</label>
+			  </div>
+		</div>
+	</footer>
+	<script src="../js/lib/jquery.js"></script>
+
+	<script src="../js/lib/seajs/sea.js"
         data-config="../js/config.js"
         data-main="../js/main.js">
-  </script>
+	</script>
 
-  <script src="../css/lib/bootstrap-3.0.3/js/bootstrap.min.js"></script>
+	<script src="../css/lib/bootstrap-3.0.3/js/bootstrap.min.js"></script>
 </body>
 </html>

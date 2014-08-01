@@ -10,7 +10,10 @@
 		"grunt-contrib-cssmin": "*",
 		"grunt-contrib-uglify": "*",
 		"grunt-contrib-watch": "*",
-		"grunt-pngmin": "*"
+		"grunt-pngmin": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-concurrent": "*",
+    "load-grunt-tasks": "*"
 	},
     "repository": {
         "type": "git",
