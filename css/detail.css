@@ -1,0 +1,224 @@
+/** main content*/
+
+.course_detail_main {
+    margin: auto;
+    width: 1000px;
+    height: 1485px;
+}
+
+.course_detail_route {
+    width: 270px;
+    height: 18px;
+    margin: 36px 0 24px 0;
+    padding: 0;
+
+}
+
+.course_detail_route div {
+    float: left;
+    padding: 0;
+    height: 15px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #4d4d4d;
+
+}
+
+.course_detail_route a {
+    color: #4d4d4d;
+}
+.route_to{
+    vertical-align: bottom;
+}
+.course_detail_route .route1 {
+    margin: 0 0 0 3px;
+}
+
+.course_detail_route .route_to {
+    margin: 0 14px;
+}
+
+/** information in detail */
+
+.course_detail_info{
+    width:600px;
+    height: 177px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.course_detail_info .character{
+    float: left;
+    width: 242px;
+    height: 177px;
+    margin: 0 2px;
+    padding: 0;
+}
+
+.course_detail_info .describe{
+    float: left;
+    margin:7px 0 0 36px;
+    padding: 0;
+    width: 220px;
+}
+
+.course_detail_info .class_name{
+    margin:0;
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    color: #4d4d4d;
+}
+.course_detail_info .commit_star{
+    margin:14px 0 10px 0;
+}
+
+.course_detail_info .teacher{
+    margin: 0 0 24px 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #4d4d4d;
+}
+.course_detail_info .preorder input{
+    padding: 0;
+    border: 0;
+    width: 158px;
+    height: 48px;
+    background-color: #ff6700;
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    color: #fff;
+}
+
+/** course detail including the title and table */
+
+
+.course_detail_table .course_table{
+    margin:14px 0 4px 0;
+    width:100%;
+    text-align: center;
+}
+.course_detail_table th{
+    border:1px solid #e6e6e6;
+    font-weight: normal;
+}
+.course_detail_table td{
+    border:1px solid #e6e6e6;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.course_table tr{
+    height: 50px;
+}
+
+.course_table .table_head{
+    background-color: #45ad96;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #fff;
+}
+
+.course_table .row1{
+    width:19%;
+}
+.course_table .row2{
+    width:23%;
+}
+
+/** commit column*/
+
+.course_detail_commit .commit_table{
+    margin:0;
+    width:100%;
+}
+
+.commit_table tr{
+    height: 144px;
+    border-bottom:1px solid #e6e6e6;
+}
+
+.commit_table td{
+
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.commit_table .avatar{
+    width: 7%;
+    text-align: center;
+    vertical-align: top;
+    padding: 24px 0;
+}
+.avatar img{
+    width:62px;
+    height: 62px;
+}
+
+.commit_table .commit_name{
+    width:10%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.commit_table .commit_content{
+    vertical-align: top;
+    text-align: left;
+    padding:24px 14px 10px 14px ;
+    letter-spacing: 1px;
+    line-height: 26px;
+    text-indent: 32px;
+    font-weight: 500;
+}
+.commit_table .commit_time{
+    float: right;
+    margin:20px 0 0 0;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+
+/** other students' avatar */
+
+.course_detail_other .other_students{
+    width:100%;
+    margin:8px 2px;
+    overflow: hidden;
+
+}
+
+.other_students>div{
+    float:left ;
+    margin:6px 7px;
+    width: 48px;
+    height: 70px;
+}
+.other_students span{
+    font-size: 8px;
+    color: #999999;
+    font-family: "Microsoft YaHei";
+}
+.other_students img{
+    width: 49px;
+    height: 49px;
+}
+
+/** color lump below */
+
+.course_detail_footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*height: 520px;*/
+    background-color: #fff;
+}
+
+.course_detail_footer_color {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 174px;
+    background-color: #4b0000;
+}

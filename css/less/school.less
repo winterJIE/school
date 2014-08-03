@@ -1,7 +1,226 @@
-@import "import-base";		// base
-@import "import-var";		// 变量定义
-@import "import-mixins";	// mixin
+//@import "import-base";		// base
+//@import "import-var";		// 变量定义
+//@import "import-mixins";	// mixin
 @import "import-reset";		// 初始化
-@import "import-ui";		// 界面
+//@import "import-ui";		// 界面
 
-@import "import-mod-login";
+//@import "import-mod-login";
+
+.column_title{
+  margin:19px 0 10px 2px;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
+  color: #4d4d4d;
+}
+
+.horizon{
+  width:auto;
+  height: 5px;
+  margin: 0 0 0 1px;
+  padding:0;
+  background-color: #e6e6e6;
+}
+
+.horizon_red{
+  width:180px;
+  height: 5px;
+  margin: 0;
+  padding:0;
+  background-color: #e30113;
+}
+
+/** tool bar fixed right */
+
+.course_detail_tool_bar{
+  position: fixed;
+  top: 312px;
+  right: 0;
+  width: 39px;
+  height: 214px;
+}
+
+
+.service_tele{
+  width: 38px;
+  height: 100px;
+  border:1px solid #c7c7c7;
+  padding:9px;
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  color: #333333;
+  background-color: #fff;
+}
+
+/** webside head */
+
+.course_detail_header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 117px;
+
+}
+
+/** banner */
+
+.course_detail_banner {
+  margin: 0;
+  padding: 8px 0;
+  height: 18px;
+  background-color: #4d4d4d;
+}
+
+.course_detail_banner_box {
+  width: 1010px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.course_detail_banner_box span {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.course_detail_banner_box .telephone {
+  display: inline-block;
+  float: left;
+  margin: 0 26px 0 0;
+  padding: 0;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+
+}
+
+.course_detail_banner_box .qq {
+  display: inline-block;
+  width: 15px;
+  height: 18px;
+  margin: 0 17px 0 0;
+  background: url("../../img/detail/qq.jpg");
+
+}
+
+.course_detail_banner_box .weibo {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 15px 0 0;
+  background: url("../../img/detail/weibo.jpg");
+}
+
+.course_detail_banner_box .weixin {
+  display: inline-block;
+  height: 18px;
+  width: 19px;
+  margin: 0;
+  background: url("../../img/detail/weixin.jpg");
+
+}
+.banner_left{
+  margin: 0;
+  width: 330px;
+  float: left;
+}
+
+.banner_right{
+  margin: 0;
+  width: 130px;
+  float: right;
+}
+.course_detail_banner_box .login, .line, .signup {
+  font-family: "microsoft yahei";
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0 6px 0 0;
+}
+
+/** navigation bar */
+
+.course_detail_navi {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: #fafafa;
+}
+
+.course_detail_navi_box {
+  width: 1042px;
+  height: 86px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.course_detail_navi_box .logo {
+  float: left;
+  width: 242px;
+  height: 86px;
+  margin: 0 0 0 21px;
+  background: url('../../img/detail/logo.jpg');
+
+}
+
+.navi_ul {
+  float: left;
+  height: 86px;
+  margin: 0;
+  padding: 0;
+}
+
+.navi_ul li {
+  float: left;
+  width: 129px;
+  height: 83px;
+  cursor: pointer;
+}
+
+.navi_ul li:hover{
+  background-color: #fff;
+  border-bottom: 3px solid #e30113;
+  position: relative;
+}
+
+.navi_ul li:hover :after{
+  content: "\00a0";
+  display: block;
+  position: absolute;
+  width:0;
+  height:0;
+  top:66px;
+  left: 56px;
+  border-width: 9px 10px;
+  border-style: solid;
+  border-color: transparent transparent #e30113 transparent;
+}
+
+.navi_ul .active{
+  background-color: #fff;
+  border-bottom: 3px solid #e30113;
+  position: relative;
+}
+
+.navi_ul .active::after{
+  content: "\00a0";
+  display: block;
+  position: absolute;
+  width:0;
+  height:0;
+  top:66px;
+  left: 56px;
+  border-width: 9px 10px;
+  border-style: solid;
+  border-color: transparent transparent #e30113 transparent;
+}
+.navi_ul span {
+  display: block;
+  margin: auto;
+  width: 72px;
+  padding: 30px;
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
+  color: #4d4d4d;
+}
