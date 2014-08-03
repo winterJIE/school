@@ -1,6 +1,5 @@
-module.exports = function( grunt ) {
-    require('load-grunt-tasks')(grunt);
 
+module.exports = function( grunt ) {
     grunt.initConfig({
     	// 编译less
         less: {
@@ -15,7 +14,7 @@ module.exports = function( grunt ) {
 					{
 						expand: true, //启用动态扩展
 						cwd: './css/less', // css文件源的文件夹
-						src: ['course.less', 'school.less'], // 匹配规则
+						src: ['school.less'], // 匹配规则
 						dest: './css/css/', //导出css和雪碧图的路径地址
 						ext: '.min.css' // 导出的css名
 					}
@@ -51,33 +50,17 @@ module.exports = function( grunt ) {
 				]
 			}
 		},
-        connect: {
-            options: {
-                port: 8080,
-                livereload: 35731,
-                hostname: 'localhost'
-            },
-            livereload: {
-                options: {
-                    open: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>/'
-                }
-            }
-        },
         watch: {
-        	files: './css/less/*.less',
-            tasks: ['less','cssmin'],
-            livereload: {
-                options: {
-                    livereload: '<%= connect.options.livereload %>'  
-                },
-                files: [
-                    'html/*',
-                    'css/css/*',
-                    'js/*'
-                ]
-            }
-        },
-    });
+            files: './css/less/*.less',
+            tasks: ['less','cssmin']
+        }
 
-    grunt.registerTask('default', ['less', 'cssmin', 'connect', 'watch']);
+    });
+   
+    grunt.loadNpmTasks( "grunt-contrib-less" );
+   	grunt.loadNpmTasks('grunt-pngmin');
+   	grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks( "grunt-contrib-watch");
+
+    grunt.registerTask('default', ['less','cssmin','watch']);
 }
