@@ -364,6 +364,9 @@ td,
 th {
   padding: 0;
 }
+.index_slider ul {
+  height: 360px;
+}
 .column_title {
   margin: 19px 0 10px 2px;
   padding: 0;

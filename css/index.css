@@ -1,0 +1,307 @@
+.flout_l{
+    float: left;
+}
+.flout_r{
+    float: right;
+}
+
+.main_title{
+    float: left;
+    margin:0 3px;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #4d4d4d;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+.more_info{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #0ba5d2;
+    float: right;
+    width: 80px;
+}
+/** sliding picture */
+
+.index_slide{
+    width: 100%;
+    height:auto;
+}
+
+.index_slide img{
+    width: inherit;
+    height: auto;
+}
+.index_teacher{
+    height:264px;
+    width: 100%;
+    margin:0;
+    padding: 28px 0 0 0;
+    background-color: #fafafa;
+
+
+}
+.index_teacher_inner{
+    width:1000px;
+    height:200px;
+    margin:18px auto;
+
+}
+.index_teacher_box{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0 24px;
+}
+.index_teacher_box .circle{
+    margin: 0 auto;
+    padding: 0;
+    width: 79px;
+    height: 79px;
+}
+.index_teacher_box .index_title{
+    width: 76px;
+    margin: 14px auto;
+    font-family: "microsoft yahei";
+    font-size: 18px;
+    color: #4d4d4d;
+
+}
+.index_teacher_box .index_describe{
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    color: #4d4d4d;
+}
+
+.index_main{
+    width:1000px;
+    height:1492px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/** newly information */
+
+.newly_info_logo{
+    background: url("../../img/index/index_16.jpg");
+    width: 134px;
+    height: 19px;
+    margin: 23px 0 15px 3px;
+    padding: 0;
+}
+
+
+
+.newly_info_main{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 13px 0;
+    clear: both;
+}
+
+.newly_info_box{
+    margin:23px 0;
+    width: 490px;
+    padding: 0;
+
+}
+.newly_info_pic{
+    float: left;
+    width:105px;
+    height: 94px;
+}
+.newly_info_describe{
+    float: left;
+    width: 360px;
+    margin: 0 10px ;
+}
+
+.newly_info_describe .newly_title{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #4d4d4d;
+    margin: 2px 0;
+    font-weight: bold;
+}
+.newly_info_describe .newly_update{
+    margin: 8px 0;
+    font-size: 12px;
+    color: #bfbfbf;
+}
+.newly_info_describe .newly_article{
+    margin: 4px 0 0 0;
+    font-size: 12px;
+    color: #9c9c9c;
+    line-height: 1.8;
+}
+
+/** subject education */
+
+.index_subjects{
+    clear: both;
+    margin: 44px 0;
+    padding: 0;
+}
+
+.newly_subj_logo{
+    width: 113px;
+    height: 21px;
+    background: url("../../img/index/index_32.jpg");
+    margin: 0 0 15px 3px;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+.index_subj_main{
+    margin: 26px 0;
+    padding: 0;
+    width: 100%;
+    clear: both;
+
+}
+.index_subj_box{
+    width: 100%;
+    overflow: hidden;
+    border:1px solid #d9d9d9;
+}
+.subj_list{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 1500px;
+    overflow: hidden;
+    position: relative;
+
+}
+.subj_list li{
+    float: left;
+    margin: 0;
+    padding: 18px 0;
+    width: 180px;
+    border:1px solid #d9d9d9;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #4d4d4d;
+    font-weight: bold;
+    text-align: center;
+    cursor:pointer;
+
+}
+.subj_list li:first-child{
+    color: #e30113;
+}
+
+.index_subj_content .content_img{
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 621px;
+}
+.index_subj_content .content_describe{
+    float: left;
+    margin: 10px 0 10px 36px;
+    padding: 0;
+    width:340px ;
+}
+
+.content_describe h2{
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #4d4d4d;
+    margin: 20px 2px;
+}
+
+.content_describe p{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #4d4d4d;
+    margin: 0 2px;
+    letter-spacing: 1px;
+    line-height: 33px;
+}
+
+/** index teacher */
+.index_teacher{
+    clear: both;
+    width:100%;
+    height: auto;
+
+}
+.newly_teacher_logo{
+    width: 113px;
+    height: 21px;
+    background: url("../../img/index/index_32.jpg");
+    margin: 0 0 15px 3px;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+.index_teacher .teacher_list{
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+.teacher_list li{
+    float: left;
+    width: 150px;
+    height:190px;
+    margin: 0 0 0 60px;
+}
+.teacher_list li:first-child{
+    margin: 0;
+}
+.teacher_list li span{
+    display: inline-block;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #4d4d4d;
+    margin: 14px 0 0 0;
+}
+
+/** exellent student */
+
+.index_student{
+    width: 100%;
+    height: auto;
+    margin: 62px 0;
+    overflow: hidden;
+}
+
+.newly_teacher_logo{
+    width: 113px;
+    height: 21px;
+    background: url("../../img/index/index_47.jpg");
+    margin: 0 0 15px 3px;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+.index_student .student_list{
+    margin: 22px 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    clear: both;
+}
+.index_student .student_list li{
+    float: left;
+    width: 226px;
+    height: 170px;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 0 30px;
+}
+.student_list li:first-child{
+    margin: 0;
+}
+.student_list li span{
+
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #4d4d4d;
+
+}

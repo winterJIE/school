@@ -16,7 +16,7 @@ module.exports = function( grunt ) {
 						cwd: './css/less', // css文件源的文件夹
 						src: ['school.less'], // 匹配规则
 						dest: './css/css/', //导出css和雪碧图的路径地址
-						ext: '.min.css' // 导出的css名
+						ext: '.css' // 导出的css名
 					}
 				]
 			}
@@ -30,7 +30,7 @@ module.exports = function( grunt ) {
 						cwd: './css/css/',
 						src: ['*.min.css'],
 						dest: './css/css',
-						ext: '.css'
+						ext: 'min.css'
 					}
 				]
 			}
@@ -54,13 +54,11 @@ module.exports = function( grunt ) {
             files: './css/less/*.less',
             tasks: ['less','cssmin']
         }
-
     });
    
     grunt.loadNpmTasks( "grunt-contrib-less" );
    	grunt.loadNpmTasks('grunt-pngmin');
    	grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks( "grunt-contrib-watch");
-
     grunt.registerTask('default', ['less','cssmin','watch']);
 }
