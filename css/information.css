@@ -1,0 +1,102 @@
+.yi_red_block{
+    background-color: #c22d2f;
+    height:120px;
+    margin-top: 3px;
+}
+.yi_sishu_info{
+    width:80%;
+    margin: 0 auto;
+}
+.yi_sishu_info .yi_info_header{
+    font-family:'microsoft yahei';
+    font-size:18px;
+    height:30px;
+    line-height: 30px;
+    border-left: 3px solid #c22d2f;
+    position: relative;
+    padding-left: 10px;
+}
+.yi_sishu_info .yi_info_header .more{
+    color:#0ba5d2;
+    position: absolute;
+    font-size: 14px;
+    right:5px;
+}
+
+.yi_info_middle{
+    border-bottom:1px dotted #d2d2d2;
+}
+
+.yi_info_middle .yi_info_middle_img{
+    width:300px;
+    height:150px;
+    float: left;
+}
+.yi_info_middle .yi_info_middle_text{
+    overflow: hidden;
+    zoom: 1;
+    font-family:'microsoft yahei';
+    font-size:18px;
+    padding-left:20px;
+}
+.yi_info_middle .yi_info_middle_text .middle_text_header{
+    margin: 0;
+    font-weight: bold;
+    position: relative;
+}
+
+.yi_info_middle .yi_info_middle_text .middle_text_content{
+    text-indent:35px;
+    line-height: 1.9;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.yi_info_middle .yi_info_middle_text .middle_text_header .middle_text_header_time{
+    position: absolute;
+    right:0;
+    font-weight: normal;
+    font-size: 16px;
+}
+.yi_info_middle .yi_info_middle_text .middle_text_content .middle_text_content_more{
+    color:#c22d2f;
+}
+
+/*.yi_four_block{*/
+    /*margin-top:-25px;*/
+/*}*/
+
+.yi_block{
+    width:50%;
+    float:left;
+    margin-top:40px;
+}
+
+.yi_block .yi_block_img{
+    width: 103px;
+    height:94px;
+    float:left;
+}
+.yi_block .yi_block_text{
+    overflow: hidden;
+    zoom:1;
+    font-family:'microsoft yahei';
+    font-size:12px;
+    padding-left:15px;
+}
+.yi_block_header{
+    margin:0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.yi_block_time_bar{
+    color:#bbb;
+    margin: 5px 0;
+}
+.yi_block_content{
+    color: #909090;
+    margin: 5px 0;
+}
+
+
+
