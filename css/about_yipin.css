@@ -145,11 +145,9 @@
     position: relative;
     width: 100%;
     height: 172px;
-    z-index: -1;
 }
 
-.color_lump_green::before {
-    content: url("../img/about_yipin/about_yipin_11.jpg");
+.lump_green_scroll {
     position: absolute;
     left: 48%;
     top: -37px;
@@ -208,11 +206,9 @@
     position: relative;
     width: 100%;
     height: 172px;
-    z-index: -1;
 }
 
-.color_lump_blue::before {
-    content: url("../img/about_yipin/about_yipin_43.jpg");
+.lump_blue_scroll {
     position: absolute;
     left: 48%;
     top: -37px;

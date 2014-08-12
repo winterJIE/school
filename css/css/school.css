@@ -395,6 +395,7 @@ th {
   right: 0;
   width: 39px;
   height: 214px;
+  z-index: 1;
 }
 .service_tele {
   width: 38px;

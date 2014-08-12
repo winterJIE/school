@@ -25,15 +25,24 @@ $(function () {
     })
 });
 
-/**  "关于我们"页面弹出框效果  */
+
 $(function () {
-    $('.join_button_1').click(function(){
-        $('.about_popup').fadeIn(300);
-        $('body').css('overflow-y','hidden');
+    /** color lump scrolling effect */
+    $('.lump_green_scroll').click(function () {
+        $("body").animate({scrollTop:'830px'}, 500);
     });
-    $('.popup_close').click(function(){
+    $('.lump_blue_scroll').click(function () {
+        $("body").animate({scrollTop:'1650px'}, 500);
+    });
+
+    /**  "关于我们"页面 弹出框效果  */
+    $('.join_button_1').click(function () {
+        $('.about_popup').fadeIn(300);
+        $('body').css('overflow-y', 'hidden');
+    });
+    $('.popup_close').click(function () {
         $('.about_popup').fadeOut(300);
-        $('body').css('overflow-y','auto');
+        $('body').css('overflow-y', 'auto');
     });
 
     /** attributes of popup window */
