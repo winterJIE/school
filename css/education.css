@@ -1,5 +1,157 @@
-.yi_red_block{
-    background-color: #c22d2f;
-    height:120px;
-    margin-top: 3px;
+* {
+  font-family: '微软雅黑';
+}
+.yi_red_block {
+  background-color: #c22d2f;
+  height: 120px;
+  margin-top: 3px;
+}
+.wrap {
+  width: 1000px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.sideBar {
+  width: 220px;
+  float: left;
+  background-color: #fafafa;
+}
+.sideBar .nav-tabs > li.active > a,
+.sideBar .nav-tabs > li.active > a:hover,
+.sideBar .nav-tabs > li.active > a:focus {
+  color: #e30113;
+  background-color: #fafafa;
+  border-style: none;
+  border-top: 1px dashed #e6e6e6;
+}
+.sideBar .nav-tabs > li.active > a span,
+.sideBar .nav-tabs > li.active > a:hover span,
+.sideBar .nav-tabs > li.active > a:focus span {
+  display: inline;
+}
+.sideBar li {
+  width: 168px;
+  list-style: none;
+  border-bottom: 1px dashed #e6e6e6;
+  margin-left: 23px;
+  font-size: 13px;
+}
+.sideBar li a {
+  color: #000;
+}
+.sideBar .nav-tabs > li:first-child > a {
+  border-top: none !important;
+}
+.sideBar span {
+  display: none;
+  float: right;
+  color: #e30113;
+}
+.sideBar .sideBarTitle {
+  width: 170px;
+  line-height: 50px;
+  border-bottom: 5px solid #e6e6e6;
+  margin-left: 23px;
+}
+.tab-content {
+  width: 756px;
+  float: right;
+  position: relative;
+}
+.tab-content h3 {
+  border-bottom: 5px solid #e6e6e6;
+  line-height: 50px;
+  margin-top: 5px;
+}
+.tab-content .redbar {
+  width: 180px;
+  height: 5px;
+  position: absolute;
+  top: 55px;
+  background-color: #e30113;
+}
+.tab-content #teacher p::first-letter {
+  margin-left: 38px;
+}
+.tab-content #teacher .teacherList {
+  margin-top: 38px;
+}
+.tab-content #teacher .teacherList .teacherItem {
+  width: 344px;
+  margin: 0 30px 38px 0;
+  float: left;
+}
+.tab-content #teacher .teacherList .teacherItem img {
+  width: 152px;
+  height: 202px;
+  float: left;
+  margin-right: 30px;
+}
+.tab-content #teacher .teacherList .teacherItem .teacherInfo h4 {
+  margin: 0 0 30px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.tab-content #teacher .teacherList .teacherItem .teacherInfo .glyphicon-star,
+.tab-content #teacher .teacherList .teacherItem .teacherInfo .glyphicon-star-empty {
+  color: #1aa139;
+  font-size: 14px;
+}
+.tab-content #teacher .teacherList .teacherItem .teacherInfo li {
+  margin: 0 0 18px;
+}
+.tab-content #achievement .news {
+  color: #e30113;
+  list-style: initial;
+  padding: 10px;
+  width: 690px;
+  font-size: 16px;
+  margin-top: 28px;
+}
+.tab-content #achievement .news li {
+  margin: 0 12px;
+  font-size: 8px;
+}
+.tab-content #achievement .news li a,
+.tab-content #achievement .news li span {
+  color: #000;
+  font-size: 16px;
+}
+.tab-content #achievement .news li span {
+  float: right;
+}
+.tab-content #achievement .news li:nth-child(5n) {
+  margin-bottom: 32px;
+}
+.tab-content #achievement .pagination {
+  margin-left: 250px;
+}
+.tab-content #student .studentItem {
+  height: 202px;
+  margin: 30px 0 10px;
+}
+.tab-content #student .studentItem img {
+  width: 152px;
+  height: 202px;
+  float: left;
+  margin-right: 30px;
+}
+.tab-content #student .studentItem span {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.tab-content #student .studentItem p {
+  max-height: 105px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tab-content #student .studentItem a {
+  float: right;
+  color: #c22d2f;
+}
+.footer {
+  width: 100%;
+  height: 195px;
+  background-color: #4b0000;
 }
