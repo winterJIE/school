@@ -27,6 +27,16 @@ $(function () {
 
 /**  "关于我们"页面弹出框效果  */
 $(function () {
+    $('.join_button_1').click(function(){
+        $('.about_popup').fadeIn(300);
+        $('body').css('overflow-y','hidden');
+    });
+    $('.popup_close').click(function(){
+        $('.about_popup').fadeOut(300);
+        $('body').css('overflow-y','auto');
+    });
+
+    /** attributes of popup window */
     var pop_form = $('.pop_form');
     var form_height = window.innerHeight - 40;
     var content_height = form_height - $('.popup_header').height();
