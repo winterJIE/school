@@ -1,33 +1,133 @@
+/** recommending PopUpMenu */
+.about_popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(174, 174, 174, 0.4);
+    z-index: 3;
+}
+
+.pop_form {
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    margin: 0 auto;
+    width: 832px;
+    height: auto;
+    background-color: #fff;
+}
+
+.popup_header {
+    padding: 0;
+    width: 100%;
+    height: 44px;
+    background-color: #c22d2f;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #fff;
+}
+.popup_close{
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 10px 14px;
+    cursor: pointer;
+}
+.popup_title{
+    float: left;
+    width: 100px;
+    margin: 10px 14px;
+}
+
+.popup_box {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.popup_content {
+    margin: 30px auto;
+    width: 700px;
+    height: auto;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #4d4d4d;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 40px;
+
+}
+
+.popup_content tr {
+    height: 36px;
+}
+
+.popup_content select {
+    min-width: 100px;
+}
+
+.popup_content .popup_textarea {
+    height: 170px;
+    width: 100%;
+
+}
+
+.popup_textarea textarea {
+    height: 130px;
+    width: 100%;
+    resize: none;
+    line-height: 20px;
+    font-size: 14px;
+
+}
+
+.popup_submit{
+    width: 162px;
+    height:45px;
+    border-radius: 6px;
+    background-color: #c22d2f;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 30px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
+
 /** introducing content */
-.about_intro{
-    width:1000px;
+.about_intro {
+    width: 1000px;
     height: 440px;
     margin: 45px auto;
     padding: 0;
 }
 
-.about_intro_img{
+.about_intro_img {
     width: 100%;
     height: auto;
     overflow: hidden;
     margin: 0;
 }
 
-.about_img_left{
+.about_img_left {
     float: left;
     width: 712px;
-    height:auto;
+    height: auto;
     margin: 0 0 28px 0;
     padding: 0;
 }
-.about_img_right{
+
+.about_img_right {
     float: right;
     width: 124px;
     height: auto;
     margin: 48px 80px;
 }
 
-.about_introduction{
+.about_introduction {
     clear: both;
     margin: 0 0 4px 0;
     padding: 0;
@@ -38,7 +138,7 @@
     color: #4d4d4d;
 }
 
-.color_lump_green{
+.color_lump_green {
     margin: 0;
     background-color: #45ad96;
     position: relative;
@@ -47,23 +147,23 @@
     z-index: -1;
 }
 
-.color_lump_green::before{
-    content:url("../img/about_yipin/about_yipin_11.jpg");
+.color_lump_green::before {
+    content: url("../img/about_yipin/about_yipin_11.jpg");
     position: absolute;
-    left:48%;
+    left: 48%;
     top: -37px;
     cursor: pointer;
 }
 
 /** introduction list */
 
-.about_list{
-    width:1000px;
+.about_list {
+    width: 1000px;
     height: auto;
     margin: 50px auto 30px auto;
 }
 
-.about_list li{
+.about_list li {
     margin-bottom: 40px;
     padding: 0;
     width: 100%;
@@ -71,25 +171,25 @@
     overflow: hidden;
 }
 
-.about_list .list_name{
+.about_list .list_name {
     float: left;
     width: 135px;
     height: auto;
     margin: 0 0 30px 0;
 }
 
-.about_list .list_short{
+.about_list .list_short {
     float: left;
     margin: 0 0 30px 32px;
     padding: 0;
-    width:200px;
+    width: 200px;
     height: auto;
     font-family: "Microsoft YaHei";
     font-size: 14px;
     color: #4d4d4d;
 }
 
-.about_list .list_content{
+.about_list .list_content {
     clear: both;
     margin: 0;
     padding: 0;
@@ -101,7 +201,7 @@
 
 /** blue lump */
 
-.color_lump_blue{
+.color_lump_blue {
     margin: 0;
     background-color: #0ba5d2;
     position: relative;
@@ -110,23 +210,23 @@
     z-index: -1;
 }
 
-.color_lump_blue::before{
-    content:url("../img/about_yipin/about_yipin_43.jpg");
+.color_lump_blue::before {
+    content: url("../img/about_yipin/about_yipin_43.jpg");
     position: absolute;
-    left:48%;
+    left: 48%;
     top: -37px;
     cursor: pointer;
 }
 
 /** join us */
-.color_lump_content{
+.color_lump_content {
     width: 980px;
     height: 106px;
     margin: 30px auto;
     padding: 30px;
 }
 
-.color_content_l{
+.color_content_l {
     width: 200px;
     height: auto;
     margin: 0 16px;
@@ -135,7 +235,7 @@
     color: #fefefe;
 }
 
-.color_content_r{
+.color_content_r {
     width: 300px;
     height: auto;
     margin: 16px 130px 10px 530px;
@@ -143,16 +243,17 @@
     font-size: 30px;
     color: #fefefe;
 }
-.about_join_us{
+
+.about_join_us {
     width: 1000px;
     height: auto;
     overflow: hidden;
-    margin:44px auto;
+    margin: 44px auto;
     padding: 0;
 
 }
 
-.about_join_intro{
+.about_join_intro {
     width: auto;
     height: auto;
     margin: 0;
@@ -163,12 +264,12 @@
     line-height: 24px;
 }
 
-.about_join_job{
-    margin:28px 0;
+.about_join_job {
+    margin: 28px 0;
     padding: 0;
 }
 
-.about_join_job p{
+.about_join_job p {
     margin: 0;
     padding: 0;
     font-family: "Microsoft YaHei";
@@ -177,7 +278,7 @@
 
 }
 
-.about_join_job .join_job_l{
+.about_join_job .join_job_l {
     float: left;
     margin: 26px 4px;
     padding: 0;
@@ -189,13 +290,13 @@
     font-family: "Microsoft YaHei";
     font-size: 14px;
     position: relative;
-    top:60px;
-    left:20px
+    top: 60px;
+    left: 20px
 
 }
 
-.join_job_l::before{
-    content:'\00a0';
+.join_job_l::before {
+    content: '\00a0';
     display: inline-block;
     position: relative;
     width: 80px;
@@ -203,7 +304,8 @@
     border-radius: 40px;
     background-color: #0ba5d2;
 }
-.join_teacher_duty{
+
+.join_teacher_duty {
     margin: 36px 0 0 0;
     color: #4c4c4c;
     font-family: "Microsoft YaHei";
@@ -213,14 +315,14 @@
 
 }
 
-.join_job_l .join_button input{
+.join_job_l .join_button input {
     display: inline-block;
     width: 220px;
     height: 45px;
     -webkit-border-radius: 6px/5px;
     -moz-border-radius: 6px/5px;
     border-radius: 6px/5px;
-    border:0;
+    border: 0;
     background-color: #0ba5d2;
     font-family: "Microsoft YaHei";
     font-size: 18px;
@@ -230,40 +332,40 @@
     font-weight: 500;
 }
 
-.join_button_1{
+.join_button_1 {
     margin: 16px 14px 16px 2px;
 
 }
 
-.join_button_2{
-    margin:16px 0 16px 14px;
+.join_button_2 {
+    margin: 16px 0 16px 14px;
 }
 
-
-.about_join_job .join_job_r{
+.about_join_job .join_job_r {
     float: right;
     margin: 26px 4px;
     padding: 0;
 }
 
-.join_job_r::before{
-    content:'\00a0';
+.join_job_r::before {
+    content: '\00a0';
     display: inline-block;
     position: relative;
     width: 77px;
     height: 77px;
     border-radius: 40px;
     background-color: #fff;
-    border:3px solid #0ba5d2;
+    border: 3px solid #0ba5d2;
 }
-.join_job_r .join_button_3{
+
+.join_job_r .join_button_3 {
     display: inline-block;
     width: 220px;
     height: 45px;
     -webkit-border-radius: 6px/5px;
     -moz-border-radius: 6px/5px;
     border-radius: 6px/5px;
-    border:3px solid #0ba5d2;
+    border: 3px solid #0ba5d2;
     background-color: #fff;
     font-family: "Microsoft YaHei";
     font-size: 18px;
@@ -277,15 +379,15 @@
 /** recruitment advertising end */
 
 /** map lump */
-.about_map_lump{
+.about_map_lump {
     width: 100%;
-    height:174px;
+    height: 174px;
     background: url('../img/about_yipin/about_yipin_45.jpg');
 }
 
-.about_map_lump .map_address{
+.about_map_lump .map_address {
     position: relative;
-    top:60%;
+    top: 60%;
     left: 15%;
     font-family: "Microsoft YaHei";
     font-size: 18px;
@@ -294,14 +396,15 @@
 
 /** connect us */
 
-.about_connect_us{
+.about_connect_us {
     width: 960px;
     height: auto;
     overflow: hidden;
-    padding:0;
-    margin:28px auto;
+    padding: 0;
+    margin: 28px auto;
 }
-.about_connect_title{
+
+.about_connect_title {
     margin: 0;
     padding: 0;
     font-family: "Microsoft YaHei";
@@ -309,12 +412,13 @@
     color: #4c4c4c;
 }
 
-.about_connect_us .connect_way{
+.about_connect_us .connect_way {
     padding: 0;
     margin: 18px 0;
     overflow: hidden;
 }
-.connect_way li{
+
+.connect_way li {
     float: left;
     margin: 40px 0 40px 80px;
     width: 180px;
@@ -324,18 +428,19 @@
     font-size: 14px;
     color: #4c4c4c;
 }
-.connect_way li:first-child{
+
+.connect_way li:first-child {
     margin: 44px 0;
     color: #e31d1d;
 }
 
-.about_connect_us .link_title{
+.about_connect_us .link_title {
     font-family: "Microsoft YaHei";
     font-size: 18px;
     color: #4c4c4c;
 }
 
-.about_connect_us .link_website{
+.about_connect_us .link_website {
     margin: 36px 6px;
     text-align: left;
     vertical-align: middle;
@@ -346,19 +451,20 @@
 
 }
 
-.link_website tr{
+.link_website tr {
     height: 30px;
 }
 
-.link_row1{
+.link_row1 {
     width: 36%;
 }
 
-.link_row2{
+.link_row2 {
     width: 36%;
 
 }
-.link_row3{
+
+.link_row3 {
     width: 28%;
 }
 
