@@ -402,10 +402,13 @@ th {
   height: 100px;
   border: 1px solid #c7c7c7;
   padding: 9px;
-  font-size: 18px;
-  font-family: "Microsoft YaHei";
-  color: #333333;
+
   background-color: #fff;
+}
+.service_tele a{
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    color: #333333;
 }
 /** webside head */
 .course_detail_header {
