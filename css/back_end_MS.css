@@ -1,61 +1,104 @@
-.back_end_navi_title{
+.back_end_navi_title {
     margin: 20px 270px;
-    width:210px;
+    width: 210px;
     height: 32px;
     font-family: "Microsoft YaHei";
     font-size: 30px;
     color: #4d4d4d;
 }
 
-.back_end_main{
-    width:1000px;
-    margin:28px auto;
-    padding:0;
+.back_end_main {
+    width: 1000px;
+    margin: 28px auto;
+    padding: 0;
     height: auto;
     overflow: hidden;
 }
-.back_end_menu{
+
+.back_end_menu {
     margin: 0;
     padding: 0 22px;
-    width: 164px ;
+    width: 164px;
     height: auto;
     overflow: hidden;
     background-color: #fafafa;
     float: left;
     font-family: "Microsoft YaHei";
     font-size: 14px;
+    color: #808080;
 }
-.back_end_menu li,.back_menu_title{
-    border-bottom: 1px dashed #000;
+
+.back_end_menu>li{
+    border-bottom: 1px dashed #e6e6e6;
     width: auto;
     margin-left: 20px;
     min-height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.back_menu_secondary{
+    margin: 0;
+    padding: 0;
+}
+.back_menu_secondary li{
+    border-bottom: 1px dashed #e6e6e6;
+    width: auto;
+    padding-left: 40px;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+}
+.back_menu_title{
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px dashed #e6e6e6;
+    height: 40px;
+    line-height: 40px;
+
+}
+.back_end_menu li:last-child{
+    border-bottom: 0;
 }
 
+.back_menu_sishu{
+    color: #e30113;
+    position: relative;
+}
+.back_menu_sishu::after{
+    content:url('../img/back_end_MS/back_end_MS_11.jpg');
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 10px;
+    height: 12px;
+    right: 24px;
+    top: 1px;
+}
 
 /** information about Sishu */
-.back_yipin_info{
+.back_yipin_info {
     float: right;
     width: 754px;
     height: auto;
-
 }
 
-.back_yipin_info_header{
+.back_yipin_info_header {
     height: 25px;
     width: 100%;
     margin: 0 0 10px 0;
 }
 
-.back_yipin_info_header h2{
+.back_yipin_info_header h2 {
     margin: 0;
-    padding:0;
+    padding: 0;
     width: 100px;
-    font:18px "microsoft yahei"  ;
+    font: 18px "microsoft yahei";
     color: #4c4c4c;
     float: left;
 }
-.back_add_img{
+
+.back_add_img {
     float: right;
     width: 25px;
     height: 25px;
@@ -63,24 +106,27 @@
     padding: 0;
     cursor: pointer;
 }
-.back_info_table{
+
+.back_info_table {
     margin: 20px 0;
     width: 100%;
     text-align: center;
     vertical-align: middle;
-    font:14px "microsoft yahei";
+    font: 14px "microsoft yahei";
     color: #4c4c4c;
 }
-.back_info_table a{
-    font:14px "microsoft yahei";
+
+.back_info_table a {
+    font: 14px "microsoft yahei";
     color: #4c4c4c;
 }
-.back_info_table tr{
-    height:54px;
+
+.back_info_table tr {
+    height: 54px;
     border-top: 1px solid #eeeded;
 }
 
-.back_thumbnail{
+.back_thumbnail {
     width: 48px;
     height: 48px;
     margin: 0 auto;
@@ -89,20 +135,24 @@
     cursor: pointer;
 }
 
-.back_row1{
+.back_row1 {
     width: 100px;
 }
-.back_row2{
+
+.back_row2 {
     width: 190px;
 }
-.back_info_table select{
+
+.back_info_table select {
     width: 84px;
     text-align: center;
 }
-.back_row3{
+
+.back_row3 {
     width: 290px;
 }
-.back_row4{
+
+.back_row4 {
     width: 94px;
 }
 
