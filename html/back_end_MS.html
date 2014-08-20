@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>后台管理系统</title>
     <link rel="stylesheet" href="../css/css/school.css"/>
-    <link rel="stylesheet" href="../css/back_end_MS.css"/>
+    <link rel="stylesheet/less" href="../css/less/back_end_MS.less"/>
+    <script type="text/javascript" src="../js/lib/less-1.7.1.min.js"></script>
     <script type="text/javascript" src="../js/lib/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../js/detail.js"></script>
 </head>
@@ -37,90 +38,838 @@
 <!-- navigation end-->
 
 <div class="back_end_main">
-    <ul class="back_end_menu">
-        <li>首页</li>
-        <li>关于一品</li>
-        <li><div class="back_menu_title">一品资讯</div>
-            <ul class="back_menu_secondary">
-                <li class="back_menu_sishu">私塾资讯</li>
-                <li>综合资讯</li>
-            </ul>
-        </li>
-        <li>一品课程</li>
-        <li><div class="back_menu_title">一品教学</div>
-            <ul class="back_menu_secondary">
-                <li>师资力量</li>
-                <li>教学成绩</li>
-                <li>优秀学子</li>
-            </ul>
-        </li>
-        <li>一品资讯</li>
-        <li>成员管理</li>
-    </ul>
-    <div class="back_yipin_info">
-        <div class="back_yipin_info_header">
-            <h2 class="back_info_header_title">一品课程</h2>
+<ul class="back_end_menu">
+    <li>首页</li>
+    <li>关于一品</li>
+    <li>
+        <div class="back_menu_title">一品资讯</div>
+        <ul class="back_menu_secondary">
+            <li class="back_menu_sishu">私塾资讯</li>
+            <li>综合资讯</li>
+        </ul>
+    </li>
+    <li>一品课程</li>
+    <li>
+        <div class="back_menu_title">一品教学</div>
+        <ul class="back_menu_secondary">
+            <li>师资力量</li>
+            <li>教学成绩</li>
+            <li>优秀学子</li>
+        </ul>
+    </li>
+    <li>一品资讯</li>
+    <li>成员管理</li>
+</ul>
+<div class="back_end_tab">
+<!-- 'yipin info' tab -->
+<div class="back_yipin_info">
+    <div class="back_tab_header">
+        <h2 class="back_tab_title">一品课程</h2>
+
+        <div class="back_add_img">
+            <img src="../img/back_end_MS/back_end_MS_07.jpg"/>
+        </div>
+    </div>
+    <div class="horizon">
+        <div class="horizon_red"></div>
+    </div>
+    <table class="back_info_table">
+        <colgroup class="back_row1"></colgroup>
+        <colgroup class="back_row2"></colgroup>
+        <colgroup class="back_row3"></colgroup>
+        <colgroup class="back_row4"></colgroup>
+        <colgroup class="back_row5"></colgroup>
+        <tr>
+            <td>缩略图</td>
+            <td>
+                <select>
+                    <option>全部</option>
+                    <option>微课</option>
+                    <option>学案</option>
+                    <option>课件</option>
+                </select>
+            </td>
+            <td>标题</td>
+            <td colspan="2">操作</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>微课</td>
+            <td>七年级语文试卷</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>学案</td>
+            <td>七年级语文试卷</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>课件</td>
+            <td>七年级语文试卷</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>习题</td>
+            <td>七年级语文试卷</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>学案</td>
+            <td>七年级语文试卷</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+    </table>
+</div>
+
+<!-- 'about us' tab -->
+<div class="about_us">
+
+<!-- introducing Sishu -->
+<div class="tab_column">
+    <div class="back_tab_header">
+        <h2 class="back_tab_title">私塾介绍</h2>
+
+        <div class="back_add_img">
+            <img src="../img/back_end_MS/back_end_MS_07.jpg"/>
+        </div>
+    </div>
+    <div class="horizon">
+        <div class="horizon_red"></div>
+    </div>
+    <table class="about_us_table">
+        <colgroup class="about_row1"></colgroup>
+        <colgroup class="about_row2"></colgroup>
+        <colgroup class="about_row3"></colgroup>
+        <tr>
+            <th>图片</th>
+            <th>介绍</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>开展专家讲座咨询和家长会，让老师能全面的了解教育动态···</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+    </table>
+</div>
+
+<!-- four characters -->
+<div class="tab_column">
+    <div class="back_tab_header">
+        <h2 class="back_tab_title">四大特色</h2>
+    </div>
+    <div class="horizon">
+        <div class="horizon_red"></div>
+    </div>
+    <table class="about_us_table">
+        <colgroup class="about_row1"></colgroup>
+        <colgroup class="about_row2"></colgroup>
+        <colgroup class="about_row3"></colgroup>
+        <tr>
+            <th>栏目</th>
+            <th>介绍</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>名师教学</td>
+            <td>开展专家讲座咨询和家长会，让老师能全面的了解教育动态···</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+        <tr>
+            <td>专注学法</td>
+            <td>开展专家讲座咨询和家长会，让老师能全面的了解教育动态···</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+        <tr>
+            <td>精品小班</td>
+            <td>开展专家讲座咨询和家长会，让老师能全面的了解教育动态···</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+        <tr>
+            <td>成长跟踪</td>
+            <td>开展专家讲座咨询和家长会，让老师能全面的了解教育动态···</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+    </table>
+</div>
+
+<!-- recruit employee -->
+<div class="tab_column">
+    <div class="back_tab_header">
+        <h2 class="back_tab_title">招贤纳士</h2>
+    </div>
+    <div class="horizon">
+        <div class="horizon_red"></div>
+    </div>
+    <table class="about_us_table">
+        <colgroup class="about_row1"></colgroup>
+        <colgroup class="about_row2"></colgroup>
+        <colgroup class="about_row3"></colgroup>
+        <tr>
+            <th>栏目</th>
+            <th>岗位职责</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>招贤纳士</td>
+            <td>开展专家讲座咨询和家长会，让老师能全面的了解教育动态···</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+        <tr>
+            <td>优秀讲师</td>
+            <td>开展专家讲座咨询和家长会，让老师能全面的了解教育动态···</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+        <tr>
+            <td>工作人员</td>
+            <td>开展专家讲座咨询和家长会，让老师能全面的了解教育动态···</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+    </table>
+</div>
+
+<!-- connect us -->
+<div class="tab_column">
+    <div class="back_tab_header">
+        <h2 class="back_tab_title">联系我们</h2>
+    </div>
+    <div class="horizon">
+        <div class="horizon_red"></div>
+    </div>
+    <table class="about_us_table">
+        <colgroup class="about_row1"></colgroup>
+        <colgroup class="about_row2"></colgroup>
+        <colgroup class="about_row3"></colgroup>
+        <tr>
+            <th>栏目</th>
+            <th></th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>手机</td>
+            <td>12834219823</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+        <tr>
+            <td>办公电话</td>
+            <td>13323112134</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+        <tr>
+            <td>邮箱</td>
+            <td>12834219823</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+        <tr>
+            <td>传真</td>
+            <td>13323112134</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+        </tr>
+    </table>
+</div>
+
+<!-- friendly link -->
+<div class="tab_column">
+    <div class="back_tab_header">
+        <h2 class="back_tab_title">友情链接</h2>
+
+        <div class="back_add_img">
+            <img src="../img/back_end_MS/back_end_MS_07.jpg"/>
+        </div>
+    </div>
+    <div class="horizon">
+        <div class="horizon_red"></div>
+    </div>
+    <table>
+        <colgroup class="blogroll_row1"></colgroup>
+        <colgroup class="blogroll_row2"></colgroup>
+        <colgroup class="blogroll_row3"></colgroup>
+        <colgroup class="blogroll_row4"></colgroup>
+        <tr>
+            <th>网站</th>
+            <th>链接</th>
+            <th colspan="2">操作</th>
+        </tr>
+        <tr>
+            <td>成都中考网</td>
+            <td>http://cd.zhongkao.com</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>中国教育在线</td>
+            <td>http://www.sdzx.net//</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>成都教育网</td>
+            <td>http://edu.chengdu.cn/</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>成都石室中学</td>
+            <td>http://www.cdshishi.net/its/</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>成都嘉祥外国语学校</td>
+            <td>http://www.jxfls.com/</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>成都七中</td>
+            <td>http://www.cdqz.net/</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>成都九中</td>
+            <td>http://www.sdzx.net/</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>成都外国语学校</td>
+            <td>http://www.cfls.net.cn/</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>成都实验外国语学校</td>
+            <td>http://www.cefls.cn/</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+    </table>
+</div>
+
+</div>
+
+<!-- 'index' tab -->
+<div class="back_end_index">
+    <div class="tab_column">
+        <div class="big_img_showing">
+            <div class="back_tab_header">
+                <h2 class="back_tab_title">大图展示区</h2>
+
+                <div class="back_add_img">
+                    <img src="../img/back_end_MS/back_end_MS_07.jpg"/>
+                </div>
+            </div>
+            <div class="horizon">
+                <div class="horizon_red"></div>
+            </div>
+            <table>
+                <colgroup class="index_row1"></colgroup>
+                <colgroup class="index_row2"></colgroup>
+                <colgroup class="index_row3"></colgroup>
+                <tr>
+                    <th>图片</th>
+                    <th>介绍</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td>http://www.36kr.com/p/209394.html</td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td>http://www.36kr.com/p/209394.html</td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td>http://www.36kr.com/p/209394.html</td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td>http://www.36kr.com/p/209394.html</td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td>http://www.36kr.com/p/209394.html</td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="tab_column">
+        <div class="newly_info">
+            <div class="back_tab_header">
+                <h2 class="back_tab_title">最新资讯</h2>
+            </div>
+            <div class="horizon">
+                <div class="horizon_red"></div>
+            </div>
+            <table>
+                <colgroup class="index_row1"></colgroup>
+                <colgroup class="index_row2"></colgroup>
+                <colgroup class="index_row3"></colgroup>
+                <colgroup class="index_row4"></colgroup>
+                <tr>
+                    <th>图片</th>
+                    <th>标题</th>
+                    <th>链接</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td>热烈祝贺XX同学获取市第一名</td>
+                    <td>http://www.36kr.com/p/209394.html</td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td>热烈祝贺XX同学获取市第一名</td>
+                    <td>http://www.36kr.com/p/209394.html</td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td>热烈祝贺XX同学获取市第一名</td>
+                    <td>http://www.36kr.com/p/209394.html</td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td>热烈祝贺XX同学获取市第一名</td>
+                    <td>http://www.36kr.com/p/209394.html</td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="tab_column">
+        <div class="subject_education">
+            <div class="back_tab_header">
+                <h2 class="back_tab_title">专题教育</h2>
+            </div>
+            <div class="horizon">
+                <div class="horizon_red"></div>
+            </div>
+            <table>
+                <colgroup class="index_row1"></colgroup>
+                <colgroup class="index_row2"></colgroup>
+                <colgroup class="index_row3"></colgroup>
+                <tr>
+                    <th>栏目</th>
+                    <th>图片</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>名师精品小班</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>3-6人超精品班</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>一对一教学</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>小升初名师冲刺</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>初升高名师冲刺</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>特色课程</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>托管</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="tab_column">
+        <div class="outstanding">
+            <div class="back_tab_header">
+                <h2 class="back_tab_title">优秀学子</h2>
+            </div>
+            <div class="horizon">
+                <div class="horizon_red"></div>
+            </div>
+            <table>
+                <colgroup class="index_row1"></colgroup>
+                <colgroup class="index_row2"></colgroup>
+                <colgroup class="index_row3"></colgroup>
+                <tr>
+                    <th>栏目</th>
+                    <th>图片</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>小升初名师冲刺</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>初升高名师冲刺</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>特色课程</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+                <tr>
+                    <td>托管</td>
+                    <td>
+                        <div class="back_thumbnail"></div>
+                    </td>
+                    <td><a href="javascript:" class="back_edit">编辑</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- 'managing member' -->
+<div class="managing_member">
+    <div class="big_img_showing">
+        <div class="back_tab_header">
+            <h2 class="back_tab_title">成员管理</h2>
+
             <div class="back_add_img">
                 <img src="../img/back_end_MS/back_end_MS_07.jpg"/>
             </div>
         </div>
-        <div class="horizon"><div class="horizon_red"></div> </div>
-        <table class="back_info_table">
-            <colgroup class="back_row1"></colgroup>
-            <colgroup class="back_row2"></colgroup>
-            <colgroup class="back_row3"></colgroup>
-            <colgroup class="back_row4"></colgroup>
-            <colgroup class="back_row5"></colgroup>
+        <div class="horizon">
+            <div class="horizon_red"></div>
+        </div>
+        <table class="managing_member_table">
+            <colgroup class="managing_row1"></colgroup>
+            <colgroup class="managing_row2"></colgroup>
+            <colgroup class="managing_row3"></colgroup>
             <tr>
-                <td>缩略图</td>
-                <td>
-                    <select>
-                        <option>全部</option>
-                        <option>微课</option>
-                        <option>学案</option>
-                        <option>课件</option>
-                    </select>
-                </td>
-                <td>标题</td>
-                <td colspan="2">操作</td>
+                <th>帐号</th>
+                <th>用户名</th>
+                <th colspan="2">操作</th>
             </tr>
             <tr>
-                <td><div class="back_thumbnail"></div></td>
-                <td>微课</td>
-                <td>七年级语文试卷</td>
+                <td>ypss001</td>
+                <td>张文龙</td>
                 <td><a href="javascript:" class="back_edit">编辑</a></td>
                 <td><a href="javascript:" class="back_delete">删除</a></td>
             </tr>
             <tr>
-                <td><div class="back_thumbnail"></div></td>
-                <td>学案</td>
-                <td>七年级语文试卷</td>
+                <td>ypss002</td>
+                <td>张文龙</td>
                 <td><a href="javascript:" class="back_edit">编辑</a></td>
                 <td><a href="javascript:" class="back_delete">删除</a></td>
             </tr>
             <tr>
-                <td><div class="back_thumbnail"></div></td>
-                <td>课件</td>
-                <td>七年级语文试卷</td>
+                <td>ypss003</td>
+                <td>张文龙</td>
                 <td><a href="javascript:" class="back_edit">编辑</a></td>
                 <td><a href="javascript:" class="back_delete">删除</a></td>
             </tr>
             <tr>
-                <td><div class="back_thumbnail"></div></td>
-                <td>习题</td>
-                <td>七年级语文试卷</td>
+                <td>ypss004</td>
+                <td>张文龙</td>
                 <td><a href="javascript:" class="back_edit">编辑</a></td>
                 <td><a href="javascript:" class="back_delete">删除</a></td>
             </tr>
-            <tr>
-                <td><div class="back_thumbnail"></div></td>
-                <td>学案</td>
-                <td>七年级语文试卷</td>
-                <td><a href="javascript:" class="back_edit">编辑</a></td>
-                <td><a href="javascript:" class="back_delete">删除</a></td>
-            </tr>
+
+
         </table>
     </div>
+</div>
+
+<!-- 'Yipin course' tab -->
+<div class="yipin_course">
+    <div class="back_tab_header">
+        <h2 class="back_tab_title">一品课程</h2>
+
+        <div class="back_add_img">
+            <img src="../img/back_end_MS/back_end_MS_07.jpg"/>
+        </div>
+    </div>
+    <div class="horizon">
+        <div class="horizon_red"></div>
+    </div>
+    <table>
+        <colgroup class="row1"></colgroup>
+        <colgroup class="row2"></colgroup>
+        <colgroup class="row3"></colgroup>
+        <colgroup class="row4"></colgroup>
+        <colgroup class="row5"></colgroup>
+        <tr>
+            <td>缩略图</td>
+            <td>
+                <select>
+                    <option>全部</option>
+                    <option>微课</option>
+                    <option>学案</option>
+                    <option>课件</option>
+                </select>
+            </td>
+            <td>标题</td>
+            <td colspan="2">操作</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>名品精品小班</td>
+            <td>七年级语文试卷</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>3-6人超精品小班</td>
+            <td>七年级语文试卷</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>一对一教学</td>
+            <td>七年级语文试卷</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>特色课程</td>
+            <td>七年级语文试卷</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>特色课程</td>
+            <td>七年级语文试卷</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+    </table>
+</div>
+
+<!-- 'outstanding students' tab -->
+<div class="outstanding">
+    <div class="back_tab_header">
+        <h2 class="back_tab_title">优秀学生</h2>
+
+        <div class="back_add_img">
+            <img src="../img/back_end_MS/back_end_MS_07.jpg"/>
+        </div>
+    </div>
+    <div class="horizon">
+        <div class="horizon_red"></div>
+    </div>
+    <table>
+        <colgroup class="row1"></colgroup>
+        <colgroup class="row2"></colgroup>
+        <colgroup class="row3"></colgroup>
+        <colgroup class="row4"></colgroup>
+        <tr>
+            <td>标题</td>
+            <td>图片</td>
+            <td colspan="2">操作</td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+
+    </table>
+</div>
+
+
+<!-- 'yipin messages' tab -->
+<div class="yipin_messages">
+    <div class="back_tab_header">
+        <h2 class="back_tab_title">综合资讯</h2>
+
+        <div class="back_add_img">
+            <img src="../img/back_end_MS/back_end_MS_07.jpg"/>
+        </div>
+    </div>
+    <div class="horizon">
+        <div class="horizon_red"></div>
+    </div>
+    <table>
+        <colgroup class="row1"></colgroup>
+        <colgroup class="row2"></colgroup>
+        <colgroup class="row3"></colgroup>
+        <tr>
+            <td>标题</td>
+            <td colspan="2">操作</td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        <tr>
+            <td>李大伟</td>
+            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+    </table>
+</div>
+
+
+
+</div>
 </div>
 
 </body>
