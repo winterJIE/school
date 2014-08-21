@@ -74,7 +74,7 @@
     color: #e30113;
     position: relative
 }
-
+/**
 .back_end_main .back_end_menu li .back_menu_secondary .back_menu_sishu::after {
     content: url('../../img/back_end_MS/back_end_MS_11.jpg');
     position: absolute;
@@ -86,7 +86,7 @@
     margin: 0;
     padding: 0
 }
-
+*/
 .back_end_main .back_end_menu li .back_menu_title {
     margin: 0;
     padding: 0;
