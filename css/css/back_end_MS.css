@@ -1,0 +1,387 @@
+.right_tab_basic_style {
+    float: right;
+    width: 754px;
+    height: auto;
+    overflow: hidden
+}
+
+.zeroMP {
+    margin: 0;
+    padding: 0
+}
+
+.clearingFloat {
+    height: auto;
+    overflow: hidden
+}
+
+.dashBottom {
+    border-bottom: 1px dashed #e6e6e6
+}
+
+.back_end_navi_title {
+    margin: 20px 270px;
+    width: 210px;
+    height: 32px;
+    font: 30px "microsoft yahei";
+    color: #4d4d4d
+}
+
+.back_end_main {
+    width: 1000px;
+    margin: 28px auto;
+    padding: 0;
+    height: auto;
+    overflow: hidden
+}
+
+.back_end_main .back_end_menu {
+    margin: 0;
+    padding: 0 22px;
+    width: 164px;
+    background-color: #fafafa;
+    float: left;
+    height: auto;
+    overflow: hidden;
+    font: 14px "microsoft yahei";
+    color: #808080
+}
+
+.back_end_main .back_end_menu li {
+    border-bottom: 1px dashed #e6e6e6;
+    width: auto;
+    margin-left: 20px;
+    min-height: 40px;
+    line-height: 40px;
+    cursor: pointer
+}
+
+.back_end_main .back_end_menu li .back_menu_secondary {
+    margin: 0;
+    padding: 0
+}
+
+.back_end_main .back_end_menu li .back_menu_secondary li {
+    width: auto;
+    padding-left: 40px;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dashed #e6e6e6
+}
+
+.back_end_main .back_end_menu li .back_menu_secondary .back_menu_sishu {
+    color: #e30113;
+    position: relative
+}
+
+.back_end_main .back_end_menu li .back_menu_secondary .back_menu_sishu::after {
+    content: url('../../img/back_end_MS/back_end_MS_11.jpg');
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 12px;
+    right: 24px;
+    top: 1px;
+    margin: 0;
+    padding: 0
+}
+
+.back_end_main .back_end_menu li .back_menu_title {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px dashed #e6e6e6;
+    height: 40px;
+    line-height: 40px
+}
+
+.back_end_main .back_end_menu li:last-child {
+    border-bottom: 0
+}
+
+.back_end_main .back_end_tab .back_yipin_info {
+    float: right;
+    width: 754px;
+    height: auto;
+    overflow: hidden;
+    display: none
+}
+
+.back_end_main .back_end_tab .back_yipin_info .back_info_table {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font: 14px "microsoft yahei";
+    color: #4c4c4c
+}
+
+.back_end_main .back_end_tab .back_yipin_info .back_info_table a {
+    font: 14px "microsoft yahei";
+    color: #4c4c4c
+}
+
+.back_end_main .back_end_tab .back_yipin_info .back_info_table tr {
+    height: 54px;
+    border-top: 1px solid #eeeded
+}
+
+.back_end_main .back_end_tab .back_yipin_info .back_info_table .back_row1 {
+    width: 100px
+}
+
+.back_end_main .back_end_tab .back_yipin_info .back_info_table .back_row2 {
+    width: 190px
+}
+
+.back_end_main .back_end_tab .back_yipin_info .back_info_table .back_row3 {
+    width: 290px
+}
+
+.back_end_main .back_end_tab .back_yipin_info .back_info_table .back_row4 {
+    width: 94px
+}
+
+.back_end_main .back_end_tab .back_yipin_info .back_info_table select {
+    width: 84px
+}
+
+.back_end_main .back_end_tab .about_us {
+    display: none;
+    float: right;
+    width: 754px;
+    height: auto;
+    overflow: hidden
+}
+
+.back_end_main .back_end_tab .about_us .about_row1 {
+    width: 18%
+}
+
+.back_end_main .back_end_tab .about_us .about_row2 {
+    width: 68%;
+    font: 14px "microsoft yahei";
+    color: #808080
+}
+
+.back_end_main .back_end_tab .about_us .about_row3 {
+    text-align: center
+}
+
+.back_end_main .back_end_tab .about_us .blogroll_row1 {
+    width: 30%
+}
+
+.back_end_main .back_end_tab .about_us .blogroll_row2 {
+    width: 50%
+}
+
+.back_end_main .back_end_tab .about_us .blogroll_row3 {
+    width: 10%;
+    text-align: center
+}
+
+.back_end_main .back_end_tab .about_us .blogroll_row4 {
+    width: 10%;
+    text-align: center
+}
+
+.back_end_main .back_end_tab .back_end_index {
+    display: none;
+    float: right;
+    width: 754px;
+    height: auto;
+    overflow: hidden
+}
+
+.back_end_tab .back_end_index .big_img_showing .index_row1 {
+    width: 22%
+}
+
+.back_end_tab .back_end_index .big_img_showing .index_row2 {
+    width: 68%
+}
+
+.back_end_tab .back_end_index .newly_info .index_row1 {
+    width: 18%
+}
+
+.back_end_tab .back_end_index .newly_info .index_row2 {
+    width: 32%
+}
+
+.back_end_tab .back_end_index .newly_info .index_row3 {
+    width: 40%
+}
+
+.subject_education .index_row1, .back_end_main .back_end_tab .back_end_index .outstanding .index_row1 {
+    width: 34%
+}
+
+.back_end_index .subject_education .index_row2, .back_end_main .back_end_tab .back_end_index .outstanding .index_row2 {
+    width: 56%
+}
+
+.managing_member {
+    display: none;
+    float: right;
+    width: 754px;
+    height: auto;
+    overflow: hidden
+}
+
+.back_end_main .back_end_tab .managing_member table th {
+    height: 54px
+}
+
+.back_end_main .back_end_tab .managing_member table tr {
+    height: 42px
+}
+
+.back_end_main .back_end_tab .managing_member table .managing_row1 {
+    width: 22%
+}
+
+.back_end_main .back_end_tab .managing_member table .managing_row2 {
+    width: 62%
+}
+
+.back_end_main .back_end_tab .managing_member table .managing_row3 {
+    width: 8%
+}
+
+.back_end_main .back_end_tab .managing_member table .managing_row4 {
+    width: 8%
+}
+
+.back_end_main .back_end_tab .yipin_course {
+    display: none;
+    float: right;
+    width: 754px;
+    height: auto;
+    overflow: hidden
+}
+
+.back_end_main .back_end_tab .yipin_course table .row1 {
+    width: 20%
+}
+
+.back_end_main .back_end_tab .yipin_course table .row2 {
+    width: 26%
+}
+
+.back_end_main .back_end_tab .yipin_course table .row3 {
+    width: 36%
+}
+
+.back_end_main .back_end_tab .yipin_course table .row4 {
+    width: 9%
+}
+
+.back_end_main .back_end_tab .yipin_course table select {
+    width: 84px
+}
+
+.back_end_main .back_end_tab .outstanding {
+    display: none;
+    float: right;
+    width: 754px;
+    height: auto;
+    overflow: hidden
+}
+
+.back_end_main .back_end_tab .outstanding table .row1 {
+    width: 32%
+}
+
+.back_end_main .back_end_tab .outstanding table .row2 {
+    width: 52%
+}
+
+.back_end_main .back_end_tab .outstanding table .row3 {
+    width: 8%
+}
+
+.back_end_main .back_end_tab .yipin_messages {
+    display: block;
+    float: right;
+    width: 754px;
+    height: auto;
+    overflow: hidden
+}
+
+.back_end_main .back_end_tab .yipin_messages table .row1 {
+    width: 84%
+}
+
+.back_end_main .back_end_tab .yipin_messages table .row2 {
+    width: 8%
+}
+
+.back_end_main .back_end_tab .tab_column {
+    margin: 0 0 18px 0;
+    padding: 0
+}
+
+.back_end_main .back_end_tab .back_tab_header {
+    height: 25px;
+    width: 100%;
+    margin: 0 0 10px 0
+}
+
+.back_end_main .back_end_tab .back_tab_header h2 {
+    width: 100px;
+    float: left;
+    font: 18px "microsoft yahei";
+    color: #4c4c4c;
+    margin: 0;
+    padding: 0
+}
+
+.back_end_main .back_end_tab .back_tab_header .back_add_img {
+    float: right;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0
+}
+
+.back_end_main .back_end_tab .back_thumbnail {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    cursor: pointer
+}
+
+.back_end_main .back_end_tab table {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle
+}
+
+.back_end_main .back_end_tab table th {
+    height: 50px;
+    border-top: 1px solid #eeeded;
+    font: 14px "microsoft yahei";
+    color: #4c4c4c
+}
+
+.back_end_main .back_end_tab table tr {
+    height: 68px;
+    border-top: 1px solid #eeeded;
+    text-align: left;
+    font: 14px "microsoft yahei";
+    color: #4c4c4c
+}
+
+.back_end_main .back_end_tab table tr a {
+    font: 14px "microsoft yahei";
+    color: #4c4c4c
+}
+
+.back_end_main .back_end_tab table th, .back_end_main .back_end_tab table tr td {
+    padding: 10px
+}
