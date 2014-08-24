@@ -15,8 +15,7 @@ $(function () {
     tab_switch(6,$('.managing_member'));
 
     $('.back_menu_secondary').eq(2).click(function () {
-        $('.outstanding').show(300).parents().hide(300);
-        $('.back_menu_secondary').eq(2).css('color','#e30113').parents().css('color','#4c4c4c');
+        $('.outstanding').show(300);
     })
 
 });
