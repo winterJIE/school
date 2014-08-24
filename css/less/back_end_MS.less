@@ -53,7 +53,7 @@
       line-height: 40px;
       cursor: pointer;
 
-      .back_menu_secondary {
+      .back_menu_secondary_1,.back_menu_secondary_2 {
         .zeroMP;
 
         li {
@@ -66,9 +66,10 @@
         }
 
         .back_menu_sishu {
-          color: #e30113;
+          color: #808080;
           position: relative;
         }
+        /**
         .back_menu_sishu::after {
           content: url('../../img/back_end_MS/back_end_MS_11.jpg');
           position: absolute;
@@ -79,6 +80,7 @@
           top: 1px;
           .zeroMP;
         }
+        **/
       }
       .back_menu_title {
         margin: 0;
@@ -168,70 +170,70 @@
     }
 
     .back_end_index {
-      display: none;
+      display: block;
       .right_tab_basic_style;
 
-      .big_img_showing{
-        .index_row1{
+      .big_img_showing {
+        .index_row1 {
           width: 22%;
         }
-        .index_row2{
+        .index_row2 {
           width: 68%;
         }
       }
 
-      .newly_info{
-        .index_row1{
+      .newly_info {
+        .index_row1 {
           width: 18%;
         }
-        .index_row2{
+        .index_row2 {
           width: 32%;
         }
-        .index_row3{
+        .index_row3 {
           width: 40%;
         }
 
       }
-      .subject_education,.outstanding{
-        .index_row1{
+      .subject_education, .outstanding {
+        .index_row1 {
           width: 34%;
         }
-        .index_row2{
+        .index_row2 {
           width: 56%;
         }
       }
     }
 
-    .managing_member{
+    .managing_member {
       display: none;
       .right_tab_basic_style;
       table {
-        th{
+        th {
           height: 54px;
         }
-        tr{
+        tr {
           height: 42px;
         }
         .managing_row1 {
-          width:22%;
+          width: 22%;
         }
         .managing_row2 {
-          width:62%;
+          width: 62%;
         }
         .managing_row3 {
-          width:8%;
+          width: 8%;
         }
         .managing_row4 {
-          width:8%;
+          width: 8%;
         }
       }
     }
 
-    .yipin_course{
+    .yipin_course {
       display: none;
       .right_tab_basic_style;
 
-      table{
+      table {
         .row1 {
           width: 20%;
         }
@@ -250,51 +252,88 @@
       }
     }
 
-    .outstanding{
+    .outstanding {
       display: none;
       .right_tab_basic_style;
 
-      table{
-        .row1{
+      table {
+        .row1 {
           width: 32%;
         }
-        .row2{
+        .row2 {
           width: 52%;
         }
-        .row3{
+        .row3 {
           width: 8%;
         }
       }
     }
 
-    .yipin_messages{
+    .yipin_messages {
       display: none;
       .right_tab_basic_style;
 
-      table{
-        .row1{
+      table {
+        .row1 {
           width: 84%;
         }
-        .row2{
+        .row2 {
           width: 8%;
         }
       }
     }
 
-    .teach_achieve{
-      display: block;
+    .teach_achieve {
+      display: none;
       .right_tab_basic_style;
 
-      table{
-        .row1{
+      table {
+        .row1 {
           width: 84%;
         }
-        .row2{
+        .row2 {
           width: 8%;
         }
-        .row3{
+        .row3 {
           width: 8%;
         }
+      }
+    }
+
+    .teach_strength {
+      display: none;
+      .right_tab_basic_style;
+
+      table {
+        .row1 {
+          width: 18%;
+        }
+        .row2 {
+          width: 20%;
+        }
+        .row3 {
+          width: 46%;
+        }
+        .row4 {
+          width: 8%;
+        }
+      }
+    }
+    .sishu_info {
+      display: none;
+      .right_tab_basic_style;
+
+      table {
+        .row1 {
+          width: 84%;
+        }
+        .row2 {
+          width: 8%;
+        }
+        .row3 {
+          width: 8%;
+        }
+
       }
     }
 
@@ -352,7 +391,7 @@
         }
 
       }
-      th,tr td{
+      th, tr td {
         padding: 10px;
       }
 
@@ -360,3 +399,4 @@
 
   }
 }
+

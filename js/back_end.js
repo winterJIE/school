@@ -1,21 +1,32 @@
 $(function () {
-    function tab_switch(index, selector) {
-        menu_list.eq(index).click(function () {
+    function tab_switch(father,index, selector) {
+        father.eq(index).click(function () {
             selector.show(300).siblings().hide(300);
-            menu_list.eq(index).css('color','#e30113').siblings().css('color','#4c4c4c');
         })
     }
 
     var menu_list = $('.back_end_menu>li');
+    var secondary_1=$('.back_menu_secondary_1>li');
+    var secondary_2=$('.back_menu_secondary_2>li');
+    var title=$('.back_menu_title');
+    var teach_strength=$('.teach_strength');
+    var sishu_info=$('.sishu_info');
 
-    tab_switch(0,$('.back_end_index'));
-    tab_switch(1,$('.about_us'));
-    tab_switch(3,$('.yipin_course'));
-    tab_switch(5,$('.back_yipin_info'));
-    tab_switch(6,$('.managing_member'));
+    tab_switch(menu_list,0,$('.back_end_index'));
+    tab_switch(menu_list,1,$('.about_us'));
+    tab_switch(menu_list,3,$('.yipin_course'));
+    tab_switch(menu_list,5,$('.back_yipin_info'));
+    tab_switch(menu_list,6,$('.managing_member'));
 
-    $('.back_menu_secondary').eq(2).click(function () {
-        $('.outstanding').show(300);
-    })
+    tab_switch(title,0,sishu_info);
+    tab_switch(secondary_1,0,sishu_info);
+    tab_switch(secondary_1,1,$('.yipin_messages'));
+
+    tab_switch(title,1,teach_strength);
+    tab_switch(secondary_2,0,teach_strength);
+    tab_switch(secondary_2,1,$('.teach_achieve'));
+    tab_switch(secondary_2,2,$('.outstanding'));
+
+
 
 });
