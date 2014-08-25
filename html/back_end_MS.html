@@ -5,9 +5,12 @@
     <title>后台管理系统</title>
     <link rel="stylesheet" href="../css/css/school.css"/>
     <link rel="stylesheet" href="../css/css/back_end_MS.css"/>
-    <link rel="stylesheet/less" href="../css/less/back_end_MS.less"/>
-    <script type="text/javascript" src="../js/lib/less-1.7.1.min.js"></script>
-    <script type="text/javascript" src="../js/lib/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="../css/css/back_end_dialog.css"/>
+    <link rel="stylesheet" href="../css/lib/bootstrap-3.0.3/css/bootstrap.css"/>
+
+    <!--<link rel="stylesheet/less" href="../css/less/back_end_MS.less"/>-->
+    <!--<script type="text/javascript" src="../js/lib/less-1.7.1.min.js"></script>-->
+    <script type="text/javascript" src="../js/lib/jquery.js"></script>
     <script type="text/javascript" src="../js/back_end.js"></script>
 </head>
 <body>
@@ -21,7 +24,7 @@
                 <a class="weixin" href="javascript:;"></a>
             </div>
             <div class="banner_right">
-                <a class="login" href="javascript:;">登陆</a>
+                <a class="login" id="yipin_sishu_login" href="javascript:;">登陆</a>
                 <span class="line">|</span>
                 <a class="signup" href="javascript:;">立即注册</a>
             </div>
@@ -98,7 +101,7 @@
             </td>
             <td>微课</td>
             <td>七年级语文试卷</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit resource_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
         <tr>
@@ -107,7 +110,7 @@
             </td>
             <td>学案</td>
             <td>七年级语文试卷</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit resource_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
         <tr>
@@ -116,7 +119,7 @@
             </td>
             <td>课件</td>
             <td>七年级语文试卷</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit resource_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
         <tr>
@@ -125,7 +128,7 @@
             </td>
             <td>习题</td>
             <td>七年级语文试卷</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit resource_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
         <tr>
@@ -134,7 +137,7 @@
             </td>
             <td>学案</td>
             <td>七年级语文试卷</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit resource_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
     </table>
@@ -372,240 +375,240 @@
 
 <!-- 'index' tab -->
 <div class="back_end_index">
-    <div class="tab_column">
-        <div class="big_img_showing">
-            <div class="back_tab_header">
-                <h2 class="back_tab_title">大图展示区</h2>
+<div class="tab_column">
+    <div class="big_img_showing">
+        <div class="back_tab_header">
+            <h2 class="back_tab_title">大图展示区</h2>
 
-                <div class="back_add_img">
-                    <img src="../img/back_end_MS/back_end_MS_07.jpg"/>
-                </div>
+            <div class="back_add_img">
+                <img src="../img/back_end_MS/back_end_MS_07.jpg"/>
             </div>
-            <div class="horizon">
-                <div class="horizon_red"></div>
-            </div>
-            <table>
-                <colgroup class="index_row1"></colgroup>
-                <colgroup class="index_row2"></colgroup>
-                <colgroup class="index_row3"></colgroup>
-                <tr>
-                    <th>图片</th>
-                    <th>介绍</th>
-                    <th>操作</th>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td>http://www.36kr.com/p/209394.html</td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td>http://www.36kr.com/p/209394.html</td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td>http://www.36kr.com/p/209394.html</td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td>http://www.36kr.com/p/209394.html</td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td>http://www.36kr.com/p/209394.html</td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-            </table>
         </div>
-    </div>
-
-
-    <div class="tab_column">
-        <div class="newly_info">
-            <div class="back_tab_header">
-                <h2 class="back_tab_title">最新资讯</h2>
-            </div>
-            <div class="horizon">
-                <div class="horizon_red"></div>
-            </div>
-            <table>
-                <colgroup class="index_row1"></colgroup>
-                <colgroup class="index_row2"></colgroup>
-                <colgroup class="index_row3"></colgroup>
-                <colgroup class="index_row4"></colgroup>
-                <tr>
-                    <th>图片</th>
-                    <th>标题</th>
-                    <th>链接</th>
-                    <th>操作</th>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td>热烈祝贺XX同学获取市第一名</td>
-                    <td>http://www.36kr.com/p/209394.html</td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td>热烈祝贺XX同学获取市第一名</td>
-                    <td>http://www.36kr.com/p/209394.html</td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td>热烈祝贺XX同学获取市第一名</td>
-                    <td>http://www.36kr.com/p/209394.html</td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td>热烈祝贺XX同学获取市第一名</td>
-                    <td>http://www.36kr.com/p/209394.html</td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-            </table>
+        <div class="horizon">
+            <div class="horizon_red"></div>
         </div>
+        <table>
+            <colgroup class="index_row1"></colgroup>
+            <colgroup class="index_row2"></colgroup>
+            <colgroup class="index_row3"></colgroup>
+            <tr>
+                <th>图片</th>
+                <th>介绍</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td>http://www.36kr.com/p/209394.html</td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td>http://www.36kr.com/p/209394.html</td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td>http://www.36kr.com/p/209394.html</td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td>http://www.36kr.com/p/209394.html</td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td>http://www.36kr.com/p/209394.html</td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+        </table>
     </div>
+</div>
 
-    <div class="tab_column">
-        <div class="subject_education">
-            <div class="back_tab_header">
-                <h2 class="back_tab_title">专题教育</h2>
-            </div>
-            <div class="horizon">
-                <div class="horizon_red"></div>
-            </div>
-            <table>
-                <colgroup class="index_row1"></colgroup>
-                <colgroup class="index_row2"></colgroup>
-                <colgroup class="index_row3"></colgroup>
-                <tr>
-                    <th>栏目</th>
-                    <th>图片</th>
-                    <th>操作</th>
-                </tr>
-                <tr>
-                    <td>名师精品小班</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>3-6人超精品班</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>一对一教学</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>小升初名师冲刺</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>初升高名师冲刺</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>特色课程</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>托管</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-            </table>
-        </div>
-    </div>
 
-    <div class="tab_column">
-        <div class="outstanding">
-            <div class="back_tab_header">
-                <h2 class="back_tab_title">优秀学子</h2>
-            </div>
-            <div class="horizon">
-                <div class="horizon_red"></div>
-            </div>
-            <table>
-                <colgroup class="index_row1"></colgroup>
-                <colgroup class="index_row2"></colgroup>
-                <colgroup class="index_row3"></colgroup>
-                <tr>
-                    <th>栏目</th>
-                    <th>图片</th>
-                    <th>操作</th>
-                </tr>
-                <tr>
-                    <td>小升初名师冲刺</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>初升高名师冲刺</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>特色课程</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-                <tr>
-                    <td>托管</td>
-                    <td>
-                        <div class="back_thumbnail"></div>
-                    </td>
-                    <td><a href="javascript:" class="back_edit">编辑</a></td>
-                </tr>
-            </table>
+<div class="tab_column">
+    <div class="newly_info">
+        <div class="back_tab_header">
+            <h2 class="back_tab_title">最新资讯</h2>
         </div>
+        <div class="horizon">
+            <div class="horizon_red"></div>
+        </div>
+        <table>
+            <colgroup class="index_row1"></colgroup>
+            <colgroup class="index_row2"></colgroup>
+            <colgroup class="index_row3"></colgroup>
+            <colgroup class="index_row4"></colgroup>
+            <tr>
+                <th>图片</th>
+                <th>标题</th>
+                <th>链接</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td>热烈祝贺XX同学获取市第一名</td>
+                <td>http://www.36kr.com/p/209394.html</td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td>热烈祝贺XX同学获取市第一名</td>
+                <td>http://www.36kr.com/p/209394.html</td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td>热烈祝贺XX同学获取市第一名</td>
+                <td>http://www.36kr.com/p/209394.html</td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td>热烈祝贺XX同学获取市第一名</td>
+                <td>http://www.36kr.com/p/209394.html</td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+        </table>
     </div>
+</div>
+
+<div class="tab_column">
+    <div class="subject_education">
+        <div class="back_tab_header">
+            <h2 class="back_tab_title">专题教育</h2>
+        </div>
+        <div class="horizon">
+            <div class="horizon_red"></div>
+        </div>
+        <table>
+            <colgroup class="index_row1"></colgroup>
+            <colgroup class="index_row2"></colgroup>
+            <colgroup class="index_row3"></colgroup>
+            <tr>
+                <th>栏目</th>
+                <th>图片</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>名师精品小班</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>3-6人超精品班</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>一对一教学</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>小升初名师冲刺</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>初升高名师冲刺</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>特色课程</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>托管</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="tab_column">
+    <div class="outstanding">
+        <div class="back_tab_header">
+            <h2 class="back_tab_title">优秀学子</h2>
+        </div>
+        <div class="horizon">
+            <div class="horizon_red"></div>
+        </div>
+        <table>
+            <colgroup class="index_row1"></colgroup>
+            <colgroup class="index_row2"></colgroup>
+            <colgroup class="index_row3"></colgroup>
+            <tr>
+                <th>栏目</th>
+                <th>图片</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>小升初名师冲刺</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>初升高名师冲刺</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>特色课程</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+            <tr>
+                <td>托管</td>
+                <td>
+                    <div class="back_thumbnail"></div>
+                </td>
+                <td><a href="javascript:" class="back_edit">编辑</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
 </div>
 
 <!-- 'managing member' -->
@@ -633,25 +636,25 @@
             <tr>
                 <td>ypss001</td>
                 <td>张文龙</td>
-                <td><a href="javascript:" class="back_edit">编辑</a></td>
+                <td><a href="javascript:" class="back_edit member_deit">编辑</a></td>
                 <td><a href="javascript:" class="back_delete">删除</a></td>
             </tr>
             <tr>
                 <td>ypss002</td>
                 <td>张文龙</td>
-                <td><a href="javascript:" class="back_edit">编辑</a></td>
+                <td><a href="javascript:" class="back_edit member_deit">编辑</a></td>
                 <td><a href="javascript:" class="back_delete">删除</a></td>
             </tr>
             <tr>
                 <td>ypss003</td>
                 <td>张文龙</td>
-                <td><a href="javascript:" class="back_edit">编辑</a></td>
+                <td><a href="javascript:" class="back_edit member_deit">编辑</a></td>
                 <td><a href="javascript:" class="back_delete">删除</a></td>
             </tr>
             <tr>
                 <td>ypss004</td>
                 <td>张文龙</td>
-                <td><a href="javascript:" class="back_edit">编辑</a></td>
+                <td><a href="javascript:" class="back_edit member_deit">编辑</a></td>
                 <td><a href="javascript:" class="back_delete">删除</a></td>
             </tr>
 
@@ -921,7 +924,7 @@
             <td>
                 <img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green_half.jpg" />
             </td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit teacher_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
         <tr>
@@ -932,19 +935,7 @@
             <td>
                 <img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green_half.jpg" />
             </td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td>
-                <img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green_half.jpg" />
-            </td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit teacher_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
 
@@ -956,13 +947,25 @@
             <td>
                 <img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green_half.jpg" />
             </td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit teacher_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+
+        <tr>
+            <td>李大伟</td>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>
+                <img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green_half.jpg" />
+            </td>
+            <td><a href="javascript:" class="back_edit teacher_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
 
 
     </table>
-    </div>
+</div>
 
 <!--  私塾资讯 -->
 <div class="sishu_info">
@@ -1017,8 +1020,6 @@
     </table>
 </div>
 
-
-
 <!-- '综合资讯' tab -->
 <div class="yipin_messages">
     <div class="back_tab_header">
@@ -1041,41 +1042,210 @@
         </tr>
         <tr>
             <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
         <tr>
             <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
         <tr>
             <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
         <tr>
             <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
         <tr>
             <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
         <tr>
             <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
             <td><a href="javascript:" class="back_delete">删除</a></td>
         </tr>
     </table>
-</div>
 
 
+</div>
+
+<div class="yidialog yipinsishu_login yipin_login hide">
+    <div class="dialog">
+        <p>
+            登录一品
+            <span class="glyphicon glyphicon-remove icon-remove"></span>
+        </p>
+        <div class="login_form">
+            <h3>登录</h3>
+            <form class="form-horizontal yipin_form" role="form">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label yipin_label"><span class="glyphicon glyphicon-envelope"></span></label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label yipin_label"><span class="glyphicon glyphicon-lock"></span></label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 下次自动登录
+                            </label>
+                            <a class="yipin_forgetpsd">忘记密码?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">登   录</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="yidialog yipin_zixun_jiaoxue yipin_login hide">
+    <div class="dialog">
+        <p>
+            编辑
+            <span class="glyphicon glyphicon-remove icon-remove"></span>
+        </p>
+        <div class="login_form">
+            <form class="form-horizontal yipin_form" role="form">
+                <div class="form-group">
+                    <label for=" " class="col-sm-2 control-label yipin_label">标题</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id=" " placeholder=" ">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for=" " class="col-sm-2 control-label yipin_label">图片</label>
+                    <div class="col-sm-10">
+                        <img src="../img/back_end_MS/back_end_MS_07.jpg" alt="img" width="120px;" height="120px;">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label yipin_label">正文</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">提    交</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="yidialog yipin_login yipin_chengyuanguanli hide">
+    <div class="dialog">
+        <p>
+            成员管理
+            <span class="glyphicon glyphicon-remove icon-remove"></span>
+        </p>
+        <div class="login_form">
+            <form class="form-horizontal yipin_form" role="form">
+                <div class="form-group">
+                    <label for=" " class="col-sm-2 control-label yipin_label">账号 :</label>
+                    <div class="col-sm-10" style="height:40px;line-height: 40px;">
+                       <span>xxxxxx</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for=" " class="col-sm-2 control-label yipin_label">姓名：</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id=" " placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for=" " class="col-sm-2 control-label yipin_label">密码：</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id=" " placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default" style="width:30%;">取消</button>
+                        <button type="submit" class="btn btn-default" style="width:30%;">保存</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="yidialog yipin_resource yipin_login hide">
+    <div class="dialog">
+        <p>
+            添加
+            <span class="glyphicon glyphicon-remove icon-remove"></span>
+        </p>
+        <div class="login_form">
+            <form class="form-horizontal yipin_form" role="form">
+                <div class="form-group">
+                    <label for=" " class="col-sm-2 control-label yipin_label">标题</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id=" " placeholder=" ">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for=" " class="col-sm-2 control-label yipin_label">缩略图</label>
+                    <div class="col-sm-10">
+                        <img src="../img/back_end_MS/back_end_MS_07.jpg" alt="img" width="120px;" height="120px;">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label yipin_label">类别</label>
+                    <div class="col-sm-10">
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label yipin_label">附件</label>
+                    <input type="file" id="fujian">
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default" style="float:left;">保存</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
 
 </div>
 </div>
+
+<div class="mask hide"></div>
 
 </body>
 </html>

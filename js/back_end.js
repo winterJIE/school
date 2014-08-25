@@ -2,7 +2,7 @@ $(function () {
     function tab_switch(father,index, selector) {
         father.eq(index).click(function () {
             selector.show(300).siblings().hide(300);
-        })
+        });
     }
 
     var menu_list = $('.back_end_menu>li');
@@ -27,6 +27,36 @@ $(function () {
     tab_switch(secondary_2,1,$('.teach_achieve'));
     tab_switch(secondary_2,2,$('.outstanding'));
 
+    $('.icon-remove').on('click', function(e){
+        var tar = $(e.currentTarget);
+        tar.parents('.yidialog').addClass('hide');
+        $('.mask').addClass('hide');
+    });
 
+    $('#yipin_sishu_login').on('click', function(){
+       $('.yipinsishu_login').removeClass('hide');
+       $('.mask').removeClass('hide');
+
+    });
+
+    $('.message_edit').on('click', function(){
+        $('.yipin_zixun_jiaoxue').removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.teacher_edit').on('click', function(){
+        $('.yipin_zixun_jiaoxue').removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.member_deit').on('click', function(){
+        $('.yipin_chengyuanguanli').removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.resource_edit').on('click', function(){
+        $('.yipin_resource').removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
 
 });
