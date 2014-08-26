@@ -2,13 +2,17 @@ $(function () {
     function tab_switch(father,index, selector) {
         father.eq(index).click(function () {
             selector.show(300).siblings().hide(300);
+
+            $('.back_end_menu').find('li').removeClass('active');
+            if(this.nodeName == 'LI'){
+                $(this).addClass('active');
+            }
         });
     }
 
     var menu_list = $('.back_end_menu>li');
     var secondary_1=$('.back_menu_secondary_1>li');
     var secondary_2=$('.back_menu_secondary_2>li');
-    var title=$('.back_menu_title');
     var teach_strength=$('.teach_strength');
     var sishu_info=$('.sishu_info');
 
@@ -18,11 +22,9 @@ $(function () {
     tab_switch(menu_list,5,$('.back_yipin_info'));
     tab_switch(menu_list,6,$('.managing_member'));
 
-    tab_switch(title,0,sishu_info);
     tab_switch(secondary_1,0,sishu_info);
     tab_switch(secondary_1,1,$('.yipin_messages'));
 
-    tab_switch(title,1,teach_strength);
     tab_switch(secondary_2,0,teach_strength);
     tab_switch(secondary_2,1,$('.teach_achieve'));
     tab_switch(secondary_2,2,$('.outstanding'));
