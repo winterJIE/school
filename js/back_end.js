@@ -10,6 +10,29 @@ $(function () {
         });
     }
 
+    <!-- adding -->
+    function add(tab,popup){
+        $(tab+' .back_add_img').on('click',function(){
+            $(popup).removeClass('hide');
+            $('.mask').removeClass('hide');
+            $(popup+' .yi_pin_text ').html('添加');
+        })
+    }
+
+
+    add('.managing_member','.yipin_chengyuanguanli');
+    add('.back_yipin_info','.yipin_resource');
+    add('.teach_strength','.yipin_zixun_jiaoxue');
+    add('.teach_achieve','.teach_achievement_edit');
+    add('.outstanding','.outstanding_source');
+    add('.yipin_course','.yipin_course_source');
+    add('.sishu_info','.sishu_info_resource');
+    add('.yipin_messages','.yipin_zixun_jiaoxue');
+
+    <!-- delete -->
+    $('.back_delete').on('click',function(){
+        $(this).closest('tr').remove();
+    });
 
     var menu_list = $('.back_end_menu>li');
     var secondary_1=$('.back_menu_secondary_1>li');
@@ -80,29 +103,7 @@ $(function () {
         $('.mask').removeClass('hide');
     });
 
-    <!-- adding -->
-    function add(tab,popup){
-        $(tab+' .back_add_img').on('click',function(){
-            $(popup).removeClass('hide');
-            $('.mask').removeClass('hide');
-            $(popup+' .yi_pin_text ').html('添加');
-        })
-    }
 
-
-    add('.managing_member','.yipin_chengyuanguanli');
-    add('.back_yipin_info','.yipin_resource');
-    add('.teach_strength','.yipin_zixun_jiaoxue');
-    add('.teach_achieve','.teach_achievement_edit');
-    add('.outstanding','.outstanding_source');
-    add('.yipin_course','.yipin_course_source');
-    add('.sishu_info','.sishu_info_resource');
-    add('.yipin_messages','.yipin_zixun_jiaoxue');
-
-    <!-- delete -->
-    $('.back_delete').on('click',function(){
-        $(this).closest('tr').remove();
-    });
 
     $('.add_file').closest('div').css('position','relative');
 });
