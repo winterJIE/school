@@ -70,4 +70,13 @@ $(function () {
         $('.mask').removeClass('hide');
     });
 
+    $('.outstanding_edit').on('click', function(){
+        $('.outstanding_source').removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.yipin_course_add').on('click', function(){
+        $('.yipin_course_source').removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
 });
