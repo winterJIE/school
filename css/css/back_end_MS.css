@@ -380,3 +380,14 @@
 .back_end_main .back_end_tab table tr td {
   padding: 10px;
 }
+
+.add_file{
+    top: 0;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 999;
+    opacity: 0;
+    cursor: pointer;
+}

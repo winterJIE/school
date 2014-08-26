@@ -103,4 +103,6 @@ $(function () {
     $('.back_delete').on('click',function(){
         $(this).closest('tr').remove();
     });
+
+    $('.add_file').closest('div').css('position','relative');
 });
