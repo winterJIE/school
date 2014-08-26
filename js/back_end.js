@@ -10,6 +10,23 @@ $(function () {
         });
     }
 
+    function add(tab,popup){
+        $(tab+' .back_add_img').on('click',function(){
+            $(popup).removeClass('hide');
+            $('.mask').removeClass('hide');
+            $(popup+' .yi_pin_text ').html('添加');
+        })
+    }
+
+    function delete_list(selector){
+        $(selector+' .back_delete').on('click',function(){
+            this.closest('tr').empty();
+        })
+    }
+    $('.back_delete').on('click',function(){
+        $(this).closest('tr').remove();
+    });
+
     var menu_list = $('.back_end_menu>li');
     var secondary_1=$('.back_menu_secondary_1>li');
     var secondary_2=$('.back_menu_secondary_2>li');
@@ -78,4 +95,16 @@ $(function () {
         $('.yipin_course_source').removeClass('hide');
         $('.mask').removeClass('hide');
     });
+
+    <!-- adding -->
+
+
+    add('.managing_member','.yipin_chengyuanguanli');
+    add('.back_yipin_info','.yipin_resource');
+    add('.teach_strength','.yipin_zixun_jiaoxue');
+    add('.teach_achieve','.teach_achievement_edit');
+    add('.outstanding','.outstanding_source');
+    add('.yipin_course','.yipin_course_source');
+    add('.sishu_info','.sishu_info_resource');
+    add('.yipin_messages','.yipin_zixun_jiaoxue');
 });
