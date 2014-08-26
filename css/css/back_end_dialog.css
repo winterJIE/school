@@ -34,7 +34,7 @@
   color: #ffffff;
 }
 .yipin_login {
-  position: absolute;
+  position: fixed;
   width: 50%;
   z-index: 999;
   margin: 0 auto;
