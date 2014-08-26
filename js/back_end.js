@@ -38,7 +38,6 @@ $(function () {
     $('#yipin_sishu_login').on('click', function(){
        $('.yipinsishu_login').removeClass('hide');
        $('.mask').removeClass('hide');
-
     });
 
     $('.message_edit').on('click', function(){
