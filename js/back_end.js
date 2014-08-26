@@ -10,6 +10,22 @@ $(function () {
         });
     }
 
+    function add(tab,popup){
+        $(tab+' .back_add_img').on('click',function(){
+            $(popup).removeClass('hide');
+            $('.mask').removeClass('hide');
+            $(popup+' .yi_pin_text ').html('添加');
+        })
+    }
+
+    function delete_list(selector){
+        $(selector+' .back_delete').on('click',function(){
+            this.closest('tr').empty();
+        })
+    }
+    $('.back_delete').on('click',function(){
+        $(this).closest('tr').remove();
+    });
 
     var menu_list = $('.back_end_menu>li');
     var secondary_1=$('.back_menu_secondary_1>li');
@@ -81,13 +97,6 @@ $(function () {
     });
 
     <!-- adding -->
-    function add(tab,popup){
-        $(tab+' .back_add_img').on('click',function(){
-            $(popup).removeClass('hide');
-            $('.mask').removeClass('hide');
-            $(popup+' .yi_pin_text ').html('添加');
-        })
-    }
 
 
     add('.managing_member','.yipin_chengyuanguanli');
@@ -98,9 +107,4 @@ $(function () {
     add('.yipin_course','.yipin_course_source');
     add('.sishu_info','.sishu_info_resource');
     add('.yipin_messages','.yipin_zixun_jiaoxue');
-
-    <!-- delete -->
-    $('.back_delete').on('click',function(){
-        $(this).closest('tr').remove();
-    });
 });
