@@ -63,5 +63,9 @@ $(function () {
         $('.sishu_info_resource').removeClass('hide');
         $('.mask').removeClass('hide');
     });
+    $('.teach_achieve_edit').on('click', function(){
+        $('.teach_achievement_edit').removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
 
 });
