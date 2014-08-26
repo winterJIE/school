@@ -59,4 +59,9 @@ $(function () {
         $('.mask').removeClass('hide');
     });
 
+    $('.sishu_info_edit').on('click', function(){
+        $('.sishu_info_resource').removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
 });
