@@ -404,3 +404,15 @@
 .create_success_window{
     background-color: #fff;
 }
+
+.input_hide{
+    border: 0;
+}
+.yipin_course_source textarea{
+    width: 100%;
+}
+.yipin_course_source thead tr,th{
+    text-align: center !important;
+    padding: 0;
+    height: 20px !important ;
+}

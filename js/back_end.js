@@ -105,8 +105,9 @@ $(function () {
 
 
     <!-- 'create successfully' -->
-    $('member_save').on('click',function(){
-
+    $('.member_save').click(function(){
+        $('.yipin_chengyuanguanli').addClass('hide');
+        $('.create_success_window').removeClass('hide');
     });
 
 
