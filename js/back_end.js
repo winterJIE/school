@@ -110,7 +110,105 @@ $(function () {
         $('.create_success_window').removeClass('hide');
     });
 
-
-
     $('.add_file').closest('div').css('position','relative');
+
+
+    $('.back_edit_first').on('click', function(){
+        var tar = $('.yipin_index_first');
+        tar.find('.yi_pin_text').text('编辑');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.index_add_first').on('click', function(){
+        var tar = $('.yipin_index_first');
+        tar.find('.yi_pin_text').text('添加');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.back_edit_second').on('click', function(){
+        var tar = $('.yipin_index_second');
+        tar.find('.yi_pin_text').text('编辑');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.index_add_second').on('click', function(){
+        var tar = $('.yipin_index_second');
+        tar.find('.yi_pin_text').text('添加');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.back_edit_third').on('click', function(){
+        var tar = $('.yipin_index_third');
+        tar.find('.yi_pin_text').text('编辑');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.index_add_third').on('click', function(){
+        var tar = $('.yipin_index_third');
+        tar.find('.yi_pin_text').text('添加');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.back_edit_fouth').on('click', function(){
+        var tar = $('.yipin_index_fouth');
+        tar.find('.yi_pin_text').text('编辑');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.index_add_fouth').on('click', function(){
+        var tar = $('.yipin_index_fouth');
+        tar.find('.yi_pin_text').text('添加');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.about_back_edit_fouth').on('click', function(){
+        var tar = $('.yipin_about_fouth');
+        tar.find('.yi_pin_text').text('编辑');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.about_add_fouth').on('click', function(){
+        var tar = $('.yipin_about_fouth');
+        tar.find('.yi_pin_text').text('添加');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.about_back_edit_third').on('click', function(){
+        var tar = $('.yipin_about_third');
+        tar.find('.yi_pin_text').text('编辑');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.about_back_edit_second').on('click', function(){
+        var tar = $('.yipin_about_second');
+        tar.find('.yi_pin_text').text('编辑');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.about_back_edit_first').on('click', function(){
+        var tar = $('.yipin_about_first');
+        tar.find('.yi_pin_text').text('编辑');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
+    $('.about_back_edit_zero').on('click', function(){
+        var tar = $('.yipin_about_zero');
+        tar.find('.yi_pin_text').text('编辑');
+        tar.removeClass('hide');
+        $('.mask').removeClass('hide');
+    });
+
 });
