@@ -416,3 +416,9 @@
     padding: 0;
     height: 20px !important ;
 }
+
+.yipin_label{
+    text-align: left !important;
+    width: 16% !important;
+    font: 20px 'microsoft yahei' !important;
+}

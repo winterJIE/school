@@ -211,4 +211,8 @@ $(function () {
         $('.mask').removeClass('hide');
     });
 
+
+
+
+    $('.yipin_label+div').removeClass('col-sm-10').addClass('col-sm-8')
 });
