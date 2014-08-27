@@ -22,7 +22,7 @@ $(function () {
 
     add('.managing_member','.yipin_chengyuanguanli');
     add('.back_yipin_info','.yipin_resource');
-    add('.teach_strength','.yipin_zixun_jiaoxue');
+    add('.teach_strength','.teach_strength_source');
     add('.teach_achieve','.teach_achievement_edit');
     add('.outstanding','.outstanding_source');
     add('.yipin_course','.yipin_course_source');
@@ -70,7 +70,7 @@ $(function () {
     });
 
     $('.teacher_edit').on('click', function(){
-        $('.yipin_zixun_jiaoxue').removeClass('hide');
+        $('.teach_strength_source').removeClass('hide');
         $('.mask').removeClass('hide');
     });
 
@@ -101,6 +101,12 @@ $(function () {
     $('.yipin_course_add').on('click', function(){
         $('.yipin_course_source').removeClass('hide');
         $('.mask').removeClass('hide');
+    });
+
+
+    <!-- 'create successfully' -->
+    $('member_save').on('click',function(){
+
     });
 
 

@@ -391,3 +391,16 @@
     opacity: 0;
     cursor: pointer;
 }
+
+.yipin_login textarea{
+    width: 70%;
+    resize:none;
+}
+.create_para{
+    background-color: #ffffff;
+    margin: 10px 20px;
+
+}
+.create_success_window{
+    background-color: #fff;
+}
