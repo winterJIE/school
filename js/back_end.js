@@ -13,9 +13,11 @@ $(function () {
     <!-- adding -->
     function add(tab,popup){
         $(tab+' .back_add_img').on('click',function(){
-            $(popup).removeClass('hide');
+            $(popup).removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
             $('.mask').removeClass('hide');
             $(popup+' .yi_pin_text ').html('添加');
+
+
         })
     }
 
@@ -60,46 +62,46 @@ $(function () {
     });
 
     $('#yipin_sishu_login').on('click', function(){
-       $('.yipinsishu_login').removeClass('hide');
+       $('.yipinsishu_login').removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
        $('.mask').removeClass('hide');
     });
 
     $('.message_edit').on('click', function(){
-        $('.yipin_zixun_jiaoxue').removeClass('hide');
+        $('.yipin_zixun_jiaoxue').removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.teacher_edit').on('click', function(){
-        $('.teach_strength_source').removeClass('hide');
+        $('.teach_strength_source').removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.member_deit').on('click', function(){
-        $('.yipin_chengyuanguanli').removeClass('hide');
+        $('.yipin_chengyuanguanli').removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.resource_edit').on('click', function(){
-        $('.yipin_resource').removeClass('hide');
+        $('.yipin_resource').removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.sishu_info_edit').on('click', function(){
-        $('.sishu_info_resource').removeClass('hide');
+        $('.sishu_info_resource').removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
     $('.teach_achieve_edit').on('click', function(){
-        $('.teach_achievement_edit').removeClass('hide');
+        $('.teach_achievement_edit').removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.outstanding_edit').on('click', function(){
-        $('.outstanding_source').removeClass('hide');
+        $('.outstanding_source').removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.yipin_course_add').on('click', function(){
-        $('.yipin_course_source').removeClass('hide');
+        $('.yipin_course_source').removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
@@ -116,103 +118,103 @@ $(function () {
     $('.back_edit_first').on('click', function(){
         var tar = $('.yipin_index_first');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.index_add_first').on('click', function(){
         var tar = $('.yipin_index_first');
         tar.find('.yi_pin_text').text('添加');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.back_edit_second').on('click', function(){
         var tar = $('.yipin_index_second');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.index_add_second').on('click', function(){
         var tar = $('.yipin_index_second');
         tar.find('.yi_pin_text').text('添加');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.back_edit_third').on('click', function(){
         var tar = $('.yipin_index_third');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.index_add_third').on('click', function(){
         var tar = $('.yipin_index_third');
         tar.find('.yi_pin_text').text('添加');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.back_edit_fouth').on('click', function(){
         var tar = $('.yipin_index_fouth');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.index_add_fouth').on('click', function(){
         var tar = $('.yipin_index_fouth');
         tar.find('.yi_pin_text').text('添加');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.about_back_edit_fouth').on('click', function(){
         var tar = $('.yipin_about_fouth');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.about_add_fouth').on('click', function(){
         var tar = $('.yipin_about_fouth');
         tar.find('.yi_pin_text').text('添加');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.about_back_edit_third').on('click', function(){
         var tar = $('.yipin_about_third');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.about_back_edit_second').on('click', function(){
         var tar = $('.yipin_about_second');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.about_back_edit_first').on('click', function(){
         var tar = $('.yipin_about_first');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
     $('.about_back_edit_zero').on('click', function(){
         var tar = $('.yipin_about_zero');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').attr('data_id',Math.floor(Math.random()*1000));
         $('.mask').removeClass('hide');
     });
 
 
 
 
-    $('.yipin_label+div').removeClass('col-sm-10').addClass('col-sm-8')
+    $('.yipin_label+div').removeClass('col-sm-10').addClass('col-sm-8');
 });
