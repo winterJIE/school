@@ -62,7 +62,6 @@ $(function () {
 
 
 /** sliding picture in the index **/
-
 $(function(){
     $('.index_slide .carousel-inner img').css({'width':$('body').width(),'margin':0})
 });
