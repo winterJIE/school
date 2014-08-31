@@ -467,12 +467,12 @@ th {
 }
 .banner_left {
   margin: 0;
-  width: 330px;
+  width: 530px;
   float: left;
 }
 .banner_right {
   margin: 0;
-  width: 130px;
+  width: 170px;
   float: right;
 }
 .course_detail_banner_box .login,
@@ -499,10 +499,10 @@ th {
 }
 .course_detail_navi_box .logo {
   float: left;
-  width: 242px;
-  height: 86px;
-  margin: 0 0 0 21px;
-  background: url('../../img/detail/logo.jpg');
+  width: 304px;
+  height: 62px;
+  margin: 10px 0;
+  background: url('../../img/index/index_03.jpg');
 }
 .navi_ul {
   float: left;
@@ -512,7 +512,7 @@ th {
 }
 .navi_ul li {
   float: left;
-  width: 129px;
+  width: 120px;
   height: 83px;
   cursor: pointer;
 }
@@ -554,9 +554,9 @@ th {
   display: block;
   margin: auto;
   width: 72px;
-  padding: 30px;
+  line-height: 83px;
   font-family: "Microsoft YaHei";
-  font-size: 18px;
+  font-size: 1.2em;
   color: #4d4d4d;
 }
 /*# sourceMappingURL=school.css.map */

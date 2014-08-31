@@ -5,6 +5,10 @@
     float: right;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .main_title{
     float: left;
     margin:0 3px;
@@ -299,9 +303,70 @@
     margin: 0;
 }
 .student_list li span{
-
     font-family: "Microsoft YaHei";
     font-size: 14px;
     color: #4d4d4d;
 
+}
+
+/** footer **/
+.index_footer{
+    width: 100%;
+    height:150px;
+    margin: 0;
+    padding: 0;
+    background-color: #4b0000;
+}
+.index_footer_frame{
+    width:990px;
+    height:80px;
+    margin: 0 auto;
+    padding: 24px 0;
+
+}
+.index_footer_img{
+    float: left;
+    margin: 0 14px;
+    width: 220px;
+    height:52px;
+    background: url('../img/index/index_21.png');
+}
+.index_footer_contact{
+    float: left;
+    margin:0 86px;
+    padding: 0;
+    width: 220px;
+    height: 74px;
+}
+.index_footer_contact h3{
+    font:14px 'microsoft yahei';
+    color: #3a3a3a;
+    margin: 0;
+}
+.index_footer_contact p{
+    font:12px 'microsoft yahei';
+    color: #3a3a3a;
+    margin:8px 0;
+}
+.index_footer_focus{
+    float: left;
+    margin: 0 12px;
+}
+.index_footer_focus h3{
+    font:14px 'microsoft yahei';
+    color: #3a3a3a;
+    margin: 0;
+}
+.index_footer_focus p span{
+    display: inline-block;
+    margin: 14px 12px;
+    cursor: pointer;
+}
+
+.index_footer_copyright{
+    width: 100%;
+    font:10px 'microsoft yahei';
+    color: #3a3a3a;
+    background-color: #3f0202;
+    padding: 0 172px;
 }
