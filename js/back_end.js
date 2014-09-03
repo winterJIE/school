@@ -1,14 +1,28 @@
 $(function () {
-    function tab_switch(father,index, selector) {
+    function tab_switch(father, index, selector) {
         father.eq(index).click(function () {
             selector.show(300).siblings().hide(300);
 
             $('.back_end_menu').find('li').removeClass('active');
-            if(this.nodeName == 'LI'){
+            if (this.nodeName == 'LI') {
                 $(this).addClass('active');
             }
+            selector.find('.complex_messages').attr('id','itemContainer');
+            selector.find('.jpage_content').attr('id','content');
+
+            $("div.holder").jPages({
+                containerID: "itemContainer"
+            });
+
+
+            var nameTemplate=Handlebars.compile($('#info_template').html());
+            $('#complex_messages').html(nameTemplate(nameData));
+
         });
     }
+
+    /** handlebarsJS **/
+
 
     <!-- adding -->
     function add(tab,popup){
@@ -36,6 +50,7 @@ $(function () {
         $(this).closest('tr').remove();
     });
 
+    /** switch the different tabs **/
     var menu_list = $('.back_end_menu>li');
     var secondary_1=$('.back_menu_secondary_1>li');
     var secondary_2=$('.back_menu_secondary_2>li');

@@ -8,10 +8,35 @@
     <link rel="stylesheet" href="../css/css/back_end_dialog.css"/>
     <link rel="stylesheet" href="../css/lib/bootstrap-3.0.3/css/bootstrap.css"/>
 
-    <!--<link rel="stylesheet/less" href="../css/less/back_end_MS.less"/>-->
-    <!--<script type="text/javascript" src="../js/lib/less-1.7.1.min.js"></script>-->
-    <script type="text/javascript" src="../js/lib/jquery.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../js/back_end.js"></script>
+    <script src="../js/lib/jPages.js"></script>
+    <script type="text/javascript" src="../js/lib/tabifier.js"></script>
+    <script type="text/javascript" src="../js/lib/handlebars-1.0.0.beta.6.js"></script>
+    <script id="info_template" type="text/x-handlebars-template">
+        {{#each this}}
+        <tr>
+            <td>{{name}}</td>
+            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        {{/each}}
+    </script>
+    <script type="text/javascript">
+        $(function(){
+        var nameData=[{"name":'李大伟'},{"name":'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'李伟'},
+            {name:'李大伟'},{name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'李伟'},{name:'李大伟'},
+            {name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},
+            {name:'李伟'},{name:'李大伟'},{name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'李大伟'},
+            {name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'张文龙'},{name:'李文'},
+            {name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},
+            {name:'李伟'},{name:'李大伟'},{name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'李大伟'},
+            {name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'张文龙'},{name:'李文'}];
+        var nameTemplate=Handlebars.compile($('#info_template').html());
+        $('.complex_messages').html(nameTemplate(nameData));
+        })
+    </script>
+
 </head>
 <body>
 <div class="course_detail_header">
@@ -986,45 +1011,24 @@
     <div class="horizon">
         <div class="horizon_red"></div>
     </div>
-    <table>
-        <colgroup class="row1"></colgroup>
-        <colgroup class="row2"></colgroup>
-        <colgroup class="row3"></colgroup>
-        <tr>
-            <td>标题</td>
-            <td colspan="2">操作</td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit sishu_info_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit sishu_info_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit sishu_info_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit sishu_info_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit sishu_info_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit sishu_info_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-    </table>
+    <div class="defaults">
+
+        <table>
+            <colgroup class="row1"></colgroup>
+            <colgroup class="row2"></colgroup>
+            <colgroup class="row3"></colgroup>
+            <thead>
+            <tr>
+                <td>标题</td>
+                <td colspan="2">操作</td>
+            </tr>
+            </thead>
+            <tbody class="complex_messages">
+            </tbody>
+        </table>
+        <div class="holder"></div>
+    </div>
+
 </div>
 
 <!-- '综合资讯' tab -->
@@ -1039,46 +1043,23 @@
     <div class="horizon">
         <div class="horizon_red"></div>
     </div>
+    <div class="defaults jpage_content">
+
     <table>
         <colgroup class="row1"></colgroup>
         <colgroup class="row2"></colgroup>
         <colgroup class="row3"></colgroup>
+        <thead>
         <tr>
             <td>标题</td>
             <td colspan="2">操作</td>
         </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td><a href="javascript:" class="back_edit message_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
+        </thead>
+        <tbody class="complex_messages">
+        </tbody>
     </table>
-
+        <div class="holder"></div>
+    </div>
 
 </div>
 
