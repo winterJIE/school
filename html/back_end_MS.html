@@ -22,20 +22,47 @@
         </tr>
         {{/each}}
     </script>
-    <script type="text/javascript">
-        $(function(){
-        var nameData=[{"name":'李大伟'},{"name":'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'李伟'},
-            {name:'李大伟'},{name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'李伟'},{name:'李大伟'},
-            {name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},
-            {name:'李伟'},{name:'李大伟'},{name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'李大伟'},
-            {name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'张文龙'},{name:'李文'},
-            {name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},
-            {name:'李伟'},{name:'李大伟'},{name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'李大伟'},
-            {name:'赵文静'},{name:'张文龙'},{name:'李文'},{name:'李文荣'},{name:'张文龙'},{name:'李文'}];
-        var nameTemplate=Handlebars.compile($('#info_template').html());
-        $('.complex_messages').html(nameTemplate(nameData));
-        })
+
+    <script id="strength_template" type="text/x-handlebars-template">
+        {{#each this}}
+        <tr>
+            <td>{{name}}</td>
+            <td>
+                <div class="back_thumbnail"></div>
+            </td>
+            <td>
+                <img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green_half.jpg" />
+            </td>
+            <td><a href="javascript:" class="back_edit teacher_edit">编辑</a></td>
+            <td><a href="javascript:" class="back_delete">删除</a></td>
+        </tr>
+        {{/each}}
     </script>
+
+    <script id="achieve_template" type="text/x-handlebars-template">
+    {{#each this}}
+    <tr>
+        <td>热烈祝贺XX同学获取市第一名</td>
+        <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
+        <td><a href="javascript:" class="back_delete">删除</a></td>
+    </tr>
+        {{/each}}
+    </script>
+
+    <script id="outstanding_template" type="text/x-handlebars-template">
+        {{#each this}}
+    <tr>
+        <td>{{name}}</td>
+        <td>
+            <div class="back_thumbnail"></div>
+        </td>
+        <td><a href="javascript:" class="back_edit outstanding_edit">编辑</a></td>
+        <td><a href="javascript:" class="back_delete">删除</a></td>
+    </tr>
+    {{/each}}
+    </script>
+
+    <script type="text/javascript" src="../js/back_end_handlebars.js"></script>
 
 </head>
 <body>
@@ -786,66 +813,26 @@
     <div class="horizon">
         <div class="horizon_red"></div>
     </div>
+    <div class="defaults jpage_content">
     <table>
         <colgroup class="row1"></colgroup>
         <colgroup class="row2"></colgroup>
         <colgroup class="row3"></colgroup>
         <colgroup class="row4"></colgroup>
+        <thead>
         <tr>
             <td>标题</td>
             <td>图片</td>
             <td>操作</td>
         </tr>
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td><a href="javascript:" class="back_edit outstanding_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td><a href="javascript:" class="back_edit outstanding_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td><a href="javascript:" class="back_edit outstanding_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td><a href="javascript:" class="back_edit outstanding_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td><a href="javascript:" class="back_edit outstanding_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td><a href="javascript:" class="back_edit outstanding_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
 
+
+        </thead>
+        <tbody class="outstandHandle jpage_body">
+        </tbody>
     </table>
+    <div class="holder"></div>
+</div>
 </div>
 
 <!-- 'teaching achievement' tab -->
@@ -860,67 +847,25 @@
     <div class="horizon">
         <div class="horizon_red"></div>
     </div>
+    <div class="defaults jpage_content">
     <table>
         <colgroup class="row1"></colgroup>
         <colgroup class="row2"></colgroup>
         <colgroup class="row3"></colgroup>
+        <thead>
         <tr>
             <td>标题</td>
             <td>图片</td>
             <td colspan="2">操作</td>
         </tr>
-        <tr>
-            <td>热烈祝贺XX同学获取市第一名</td>
-            <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>热烈祝贺XX同学获取市第一名</td>
-            <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>热烈祝贺XX同学获取市第一名</td>
-            <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>热烈祝贺XX同学获取市第一名</td>
-            <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>热烈祝贺XX同学获取市第一名</td>
-            <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>热烈祝贺XX同学获取市第一名</td>
-            <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>热烈祝贺XX同学获取市第一名</td>
-            <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>热烈祝贺XX同学获取市第一名</td>
-            <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>热烈祝贺XX同学获取市第一名</td>
-            <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>热烈祝贺XX同学获取市第一名</td>
-            <td><a href="javascript:" class="back_edit teach_achieve_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
 
+        </thead>
+        <tbody class="achieveHandle jpage_body">
+        </tbody>
     </table>
+    <div class="holder"></div>
+</div>
+
 </div>
 
 <!-- 'teaching strength' -->
@@ -935,68 +880,26 @@
     <div class="horizon">
         <div class="horizon_red"></div>
     </div>
-    <table>
-        <colgroup class="row1"></colgroup>
-        <colgroup class="row2"></colgroup>
-        <colgroup class="row3"></colgroup>
-        <colgroup class="row4"></colgroup>
-        <colgroup class="row5"></colgroup>
-        <tr>
-            <td>名字</td>
-            <td>图片</td>
-            <td>等级</td>
-            <td colspan="2">操作</td>
-
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td>
-                <img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green_half.jpg" />
-            </td>
-            <td><a href="javascript:" class="back_edit teacher_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td>
-                <img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green_half.jpg" />
-            </td>
-            <td><a href="javascript:" class="back_edit teacher_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td>
-                <img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green_half.jpg" />
-            </td>
-            <td><a href="javascript:" class="back_edit teacher_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-
-        <tr>
-            <td>李大伟</td>
-            <td>
-                <div class="back_thumbnail"></div>
-            </td>
-            <td>
-                <img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green.jpg" /><img src="../img/detail/star_green_half.jpg" />
-            </td>
-            <td><a href="javascript:" class="back_edit teacher_edit">编辑</a></td>
-            <td><a href="javascript:" class="back_delete">删除</a></td>
-        </tr>
-
-
-    </table>
+    <div class="defaults jpage_content">
+        <table>
+            <colgroup class="row1"></colgroup>
+            <colgroup class="row2"></colgroup>
+            <colgroup class="row3"></colgroup>
+            <colgroup class="row4"></colgroup>
+            <colgroup class="row5"></colgroup>
+            <thead>
+            <tr>
+                <td>名字</td>
+                <td>图片</td>
+                <td>等级</td>
+                <td colspan="2">操作</td>
+            </tr>
+            </thead>
+            <tbody class="strengthHandle jpage_body">
+            </tbody>
+        </table>
+        <div class="holder"></div>
+    </div>
 </div>
 
 <!--  私塾资讯 -->
@@ -1011,7 +914,7 @@
     <div class="horizon">
         <div class="horizon_red"></div>
     </div>
-    <div class="defaults">
+    <div class="defaults jpage_content">
 
         <table>
             <colgroup class="row1"></colgroup>
@@ -1023,7 +926,7 @@
                 <td colspan="2">操作</td>
             </tr>
             </thead>
-            <tbody class="complex_messages">
+            <tbody class="complex_messages jpage_body">
             </tbody>
         </table>
         <div class="holder"></div>
@@ -1055,7 +958,7 @@
             <td colspan="2">操作</td>
         </tr>
         </thead>
-        <tbody class="complex_messages">
+        <tbody class="complex_messages jpage_body">
         </tbody>
     </table>
         <div class="holder"></div>
@@ -1797,5 +1700,7 @@
 
 <div class="mask hide"></div>
 
+</div>
+</div>
 </body>
 </html>

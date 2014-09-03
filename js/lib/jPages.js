@@ -15,8 +15,8 @@
       defaults = {
         containerID: "",
         first: false,
-        previous: "← previous",
-        next: "next →",
+        previous: "上一页",
+        next: "下一页",
         last: false,
         links: "numeric", // blank || title
         startPage: 1,
