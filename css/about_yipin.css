@@ -292,18 +292,25 @@
 
 }
 
-.join_job_l::before {
-    content: '\00a0';
-    display: inline-block;
+.join_job_circle{
+    float: left;
+    display: block;
     position: relative;
     width: 80px;
     height: 80px;
     border-radius: 40px;
-    background-color: #0ba5d2;
+    background-color: #fff;
+    border: 3px solid #0ba5d2;
+    cursor: pointer;
+}
+.join_job_circle:hover{
+    background-color:#0ba5d2;
 }
 
 .join_teacher_duty {
-    margin: 36px 0 0 0;
+    clear: both;
+    margin:0;
+    padding: 36px 0 0 0;
     color: #4c4c4c;
     font-family: "Microsoft YaHei";
     font-size: 14px;
@@ -319,11 +326,11 @@
     -webkit-border-radius: 6px/5px;
     -moz-border-radius: 6px/5px;
     border-radius: 6px/5px;
-    border: 0;
-    background-color: #0ba5d2;
+    background-color: #fff;
     font-family: "Microsoft YaHei";
     font-size: 18px;
-    color: #fff;
+    color: #0ba5d2;
+    border: 3px solid #0ba5d2;
     letter-spacing: 12px;
     outline: 0;
     font-weight: 500;
@@ -344,16 +351,6 @@
     padding: 0;
 }
 
-.join_job_r::before {
-    content: '\00a0';
-    display: inline-block;
-    position: relative;
-    width: 77px;
-    height: 77px;
-    border-radius: 40px;
-    background-color: #fff;
-    border: 3px solid #0ba5d2;
-}
 
 .join_job_r .join_button_3 {
     display: inline-block;
@@ -371,6 +368,14 @@
     outline: 0;
     margin: 14px 4px;
     font-weight: 500
+}
+
+.join_button>input,.join_job_circle{
+    -webkit-transition: all 300ms ease-in-out 0s;-moz-transition: all 300ms ease-in-out 0s;-ms-transition: all 300ms ease-in-out 0s;-o-transition: all 300ms ease-in-out 0s;transition: all 300ms ease-in-out 0s;
+}
+.join_button input:hover{
+    background-color: #0ba5d2;
+    color: #ffffff;
 }
 
 /** recruitment advertising end */
