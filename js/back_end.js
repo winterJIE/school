@@ -85,48 +85,55 @@ $(function () {
 
     body.delegate('.message_edit','click', function(){
 
-        $('.yipin_zixun_jiaoxue').removeClass('hide').find('.yi_pin_text').text('编辑');
+        $('.yipin_zixun_jiaoxue').removeClass('hide').find('.yi_pin_text').text('编辑')
+            .closest('.yidialog').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
     body.delegate('.teacher_edit','click', function(){
 
-        $('.teach_strength_source').removeClass('hide').find('.yi_pin_text').text('编辑');
+        $('.teach_strength_source').removeClass('hide').find('.yi_pin_text').text('编辑')
+            .closest('.yidialog').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
     $('.member_deit').on('click', function(){
 
-        $('.yipin_chengyuanguanli').removeClass('hide');
+        $('.yipin_chengyuanguanli').removeClass('hide').find('.yi_pin_text').text('编辑')
+            .closest('.yidialog').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
     $('.resource_edit').on('click', function(){
 
-        $('.yipin_resource').removeClass('hide');
+        $('.yipin_resource').removeClass('hide').find('.yi_pin_text').text('编辑')
+            .closest('.yidialog').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
     $('.sishu_info_edit').on('click', function(){
 
-        $('.sishu_info_resource').removeClass('hide');
+        $('.sishu_info_resource').removeClass('hide').find('.yi_pin_text').text('编辑')
+            .closest('.yidialog').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
     body.delegate('.teach_achieve_edit','click', function(){
 
-        $('.teach_achievement_edit').removeClass('hide').find('.yi_pin_text').text('编辑');
+        $('.teach_achievement_edit').removeClass('hide').find('.yi_pin_text').text('编辑')
+            .closest('.yidialog').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
     body.delegate('.outstanding_edit','click', function(){
 
-        $('.outstanding_source').removeClass('hide').find('.yi_pin_text').text('编辑');
+        $('.outstanding_source').removeClass('hide').find('.yi_pin_text').text('编辑')
+            .closest('.yidialog').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
     $('.yipin_course_add').on('click', function(){
-
-        $('.yipin_course_source').removeClass('hide');
+        $('.yipin_course_source').removeClass('hide').find('.yi_pin_text').text('编辑')
+            .closest('.yidialog').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -140,11 +147,12 @@ $(function () {
     $('.add_file').closest('div').css('position','relative');
 
 
+    <!-- index edit -->
     $('.back_edit_first').on('click', function(){
 
         var tar = $('.yipin_index_first');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -152,7 +160,7 @@ $(function () {
 
         var tar = $('.yipin_index_first');
         tar.find('.yi_pin_text').text('添加');
-        tar.removeClass('hide');
+        tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -160,7 +168,7 @@ $(function () {
 
         var tar = $('.yipin_index_second');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -175,7 +183,7 @@ $(function () {
 
         var tar = $('.yipin_index_third');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -190,7 +198,7 @@ $(function () {
 
         var tar = $('.yipin_index_fouth');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -205,7 +213,7 @@ $(function () {
 
         var tar = $('.yipin_about_fouth');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -220,7 +228,7 @@ $(function () {
 
         var tar = $('.yipin_about_third');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -228,7 +236,7 @@ $(function () {
 
         var tar = $('.yipin_about_second');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -236,7 +244,7 @@ $(function () {
 
         var tar = $('.yipin_about_first');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -244,12 +252,36 @@ $(function () {
 
         var tar = $('.yipin_about_zero');
         tar.find('.yi_pin_text').text('编辑');
-        tar.removeClass('hide');
+        tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
 
-
+/** change the class  **/
 
     $('.yipin_label+div').removeClass('col-sm-10').addClass('col-sm-8');
+
+    /** post data to back end **/
+    $('.yidialog button[type=submit]').on('click',function(e){
+        var result=$(this).parents('.yipin_form').serializeArray();
+        var data_id=$(this).attr('data_id');
+        var data={
+            res:result,
+            id:data_id
+        };
+        console.log(data);
+        e.preventDefault();
+        url='';         /** 根据后台的规律拼出来的 **/    //TODO add the url of data
+        sendData(data,url);
+    });
+
+    function sendData(data,url){
+        $.ajax({
+            url:'',  /** 这里的url是后台给的 **/        //TODO url in the ajax
+            data:data,
+            success:function(){
+
+            }
+        })
+    }
 });
