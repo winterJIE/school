@@ -512,8 +512,9 @@ th {
 }
 .navi_ul li {
   float: left;
-  width: 120px;
+  width: 140px;
   height: 83px;
+
   cursor: pointer;
 }
 .navi_ul li:hover {
@@ -551,9 +552,10 @@ th {
   border-color: transparent transparent #e30113 transparent;
 }
 .navi_ul span {
+    text-align: center;
   display: block;
   margin: auto;
-  width: 72px;
+  width: 92px;
   line-height: 83px;
   font-family: "Microsoft YaHei";
   font-size: 1.2em;
