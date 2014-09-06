@@ -279,6 +279,7 @@ $(function () {
         $.ajax({
             url:'',  /** 这里的url是后台给的 **/        //TODO url in the ajax
             data:data,
+            dataType:'json',
             success:function(){
 
             }

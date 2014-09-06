@@ -415,13 +415,13 @@ th {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 117px;
+  height: 138px;
 }
 /** banner */
 .course_detail_banner {
   margin: 0;
-  padding: 8px 0;
-  height: 18px;
+  padding: 10px 0;
+  height: 30px;
   background-color: #4d4d4d;
 }
 .course_detail_banner_box {
@@ -466,15 +466,56 @@ th {
   background: url("../../img/detail/weixin.jpg");
 }
 .banner_left {
-  margin: 0;
-  width: 530px;
+  margin: 6px 0;
+  width: 500px;
   float: left;
 }
+
 .banner_right {
-  margin: 0;
-  width: 170px;
+  margin: 6px 0;
+  width: 150px;
   float: right;
 }
+
+/** search box style **/
+.banner_search{
+    float: right;
+    width: 200px;
+    height: 33px;
+    margin: 0 8px;
+    padding: 0;
+}
+.search_logo{
+    float: left;
+    width: 33px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background: url("../../img/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #5a5c64;
+    border-right: 1px #4d4d4d solid;
+    cursor: pointer;
+}
+.search_box{
+    float: left;
+    width: 160px;
+    height: 30px;
+}
+.search_box input{
+    width: 160px;
+    height: 30px;
+    border: 0;
+    background-color: #5a5c64;
+    padding: 0;
+    text-indent: 4px;
+    font:12px 'microsoft yahei';
+    color: #9a9a9a;
+}
+
+
+
 .course_detail_banner_box .login,
 .line,
 .signup {
