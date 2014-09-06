@@ -76,18 +76,26 @@ a:hover{
     font-size: 14px;
     color: #4d4d4d;
 }
+.index_frame{
+    width: 100%;
+    height: auto;
+}
+.bg_grey{
+    background-color: #fafafa;
+}
+
 
 .index_main{
     width:1000px;
-    height:1492px;
     margin: 0 auto;
-    padding: 0;
+    padding: 20px 0;
+    overflow: hidden;
 }
 
 /** newly information */
 
 .newly_info_logo{
-    background: url("../../img/index/index_16.jpg");
+    background: url("../img/index/index_16.jpg");
     width: 134px;
     height: 19px;
     margin: 23px 0 15px 3px;
@@ -143,15 +151,15 @@ a:hover{
 /** subject education */
 
 .index_subjects{
-    clear: both;
-    margin: 44px 0;
+    margin: 4px 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .newly_subj_logo{
     width: 113px;
     height: 21px;
-    background: url("../../img/index/index_32.jpg");
+    background: url("../img/index/index_32.jpg");
     margin: 0 0 15px 3px;
     padding: 0;
     background-repeat: no-repeat;
@@ -235,7 +243,7 @@ a:hover{
 .newly_teacher_logo{
     width: 113px;
     height: 21px;
-    background: url("../../img/index/index_32.jpg");
+    background: url("../img/index/index_32.jpg");
     margin: 0 0 15px 3px;
     padding: 0;
     background-repeat: no-repeat;
@@ -270,14 +278,14 @@ a:hover{
 .index_student{
     width: 100%;
     height: auto;
-    margin: 62px 0;
+    margin: 42px 0;
     overflow: hidden;
 }
 
 .newly_teacher_logo{
     width: 113px;
     height: 21px;
-    background: url("../../img/index/index_47.jpg");
+    background: url("../img/index/index_47.jpg");
     margin: 0 0 15px 3px;
     padding: 0;
     background-repeat: no-repeat;
