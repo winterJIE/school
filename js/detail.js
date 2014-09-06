@@ -15,6 +15,16 @@ $(function () {
     });
 });
 
+$(function(){
+    var weibo=$('.index_weibo');
+    weibo.mouseenter(function(){
+        $('.index_weibo_focus').fadeIn(300);
+    });
+    weibo.mouseleave(function(){
+        $('.index_weibo_focus').fadeOut(300);
+    })
+})
+
 /** 回到顶端 */
 
 $(function () {

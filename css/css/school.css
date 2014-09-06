@@ -419,7 +419,6 @@ th {
     height: 39px;
     position: relative;
     margin:0;
-
 }
 .tool_add_hover{
     overflow: hidden;
@@ -461,38 +460,78 @@ th {
 .course_detail_banner_box .telephone {
   display: inline-block;
   float: left;
-  margin: 0 26px 0 0;
+  margin: 4px 26px 0 0;
   padding: 0;
   font-family: "microsoft yahei";
   font-size: 14px;
   letter-spacing: 1px;
   color: #fff;
 }
-.course_detail_banner_box .qq {
-  display: inline-block;
-  width: 15px;
-  height: 18px;
-  margin: 0 17px 0 0;
-  background: url("../../img/detail/qq.jpg");
+.index_qq {
+  background: url("../../img/detail/qq.png");
 }
-.course_detail_banner_box .weibo {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin: 0 15px 0 0;
-  background: url("../../img/detail/weibo.jpg");
+.index_qq:hover{
+    background-color: #0a0;
 }
-.course_detail_banner_box .weixin {
-  display: inline-block;
-  height: 18px;
-  width: 19px;
-  margin: 0;
-  background: url("../../img/detail/weixin.jpg");
+.index_weibo {
+    position: relative;
+  background: url("../../img/detail/weibo.png");
 }
+.index_weibo:hover{
+    background-color: #a00;
+}
+.index_weixin:hover{
+    background-color: #00b;
+}
+.index_weixin{
+  background: url("../../img/detail/weixin.png");
+}
+.banner_left>div{
+    float: left;
+    display: block;
+    height: 28px;
+    width: 28px;
+    border-radius: 14px;
+    margin: 0 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #666;
+    -webkit-transition: all 300ms ease-in-out 0s ;-moz-transition: all 300ms ease-in-out 0s ;-ms-transition: all 300ms ease-in-out 0s ;-o-transition: all 300ms ease-in-out 0s ;transition: all 300ms ease-in-out 0s ;
+}
+.index_weibo_focus{
+    display:none;
+    padding: 10px 6px;
+    z-index: 1;
+    position: absolute;
+    top:40px;
+    left: -66px;
+    width: 150px;
+    height: 60px;
+    border:1px #999 solid;
+    background-color: #fff;
+    border-radius: 10px;
+    font:14px 'microsoft yahei';
+    text-align: center;
+    line-height: 26px;
+}
+.index_weibo_focus::after{
+    content: '\00a0';
+    display: block;
+    position: absolute;
+    top: -18px;
+    left: 70px;
+    width: 0;
+    height: 0;
+    border-width: 9px 10px;
+    border-style: solid;
+    border-color:transparent transparent #ffffff transparent;
+}
+
 .banner_left {
-  margin: 6px 0;
+  margin: 0;
   width: 500px;
   float: left;
+
 }
 
 .banner_right {
