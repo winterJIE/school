@@ -18,10 +18,20 @@ $(function () {
 /** 回到顶端 */
 
 $(function () {
-    var btn = $('.course_detail_tool_bar div').eq(2);
-    btn.click(function () {
-        $("body,html").animate({scrollTop: 0}, 500)
+    $('.tool_top').click(function () {
+        $("body,html").animate({scrollTop: 0}, 400)
+    })
+});
 
+/** 侧边栏的hover效果 **/
+$(function(){
+    var tool_bar_add=$('.tool_bar_add a');
+    tool_bar_add.mouseenter(function(){
+        console.log(123);
+        $('.tool_add_hover').animate({width:'100px'},300);
+    });
+    tool_bar_add.on('mouseleave',function(){
+        $('.tool_add_hover').animate({width:0},300);
     })
 });
 

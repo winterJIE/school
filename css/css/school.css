@@ -397,7 +397,11 @@ th {
   height: 214px;
   z-index: 1;
 }
-.service_tele {
+.course_detail_tool_bar .tool_weixin,.tool_top{
+    height: 39px;
+    margin:0;
+}
+.course_detail_tool_bar .service_tele {
   width: 38px;
   height: 100px;
   border: 1px solid #c7c7c7;
@@ -409,6 +413,26 @@ th {
     font-size: 18px;
     font-family: "Microsoft YaHei";
     color: #333333;
+}
+.tool_bar_add{
+    width: 39px;
+    height: 39px;
+    position: relative;
+    margin:0;
+
+}
+.tool_add_hover{
+    overflow: hidden;
+    position: absolute;
+    height: 19px;
+    width: 0;
+    right:39px;
+    top: 0;
+    background-color: #0ba5d2;
+    padding: 10px 0;
+    text-align: center;
+    font:14px 'microsoft yahei';
+    color: #fff;
 }
 /** webside head */
 .course_detail_header {

@@ -11,7 +11,7 @@ $(function () {
             /**
              * 下面是翻页功能
              * containID是引用jpage的容器,将后面的值改成需要引用翻页功能的大容器的id即可
-             * 其余的不要做改动
+             * 其余
              */
             selector.find('.jpage_body').attr('id','itemContainer');
             selector.find('.jpage_content').attr('id','content');
@@ -275,13 +275,13 @@ $(function () {
         };
         console.log(data);
         e.preventDefault();
-        url='';         /** 根据后台的规律拼出来的 **/    //TODO add the url of data
+        url='';         /** 根据后台的规律拼出来的 **/
         sendData(data,url);
     });
 
     function sendData(data,url){
         $.ajax({
-            url:'',  /** 这里的url是后台给的 **/        //TODO url in the ajax
+            url:'',  /** 这里的url是后台给的 **/        //TODO 后台处理的url写这里
             data:data,
             dataType:'json',
             success:function(){

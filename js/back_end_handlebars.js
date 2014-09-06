@@ -16,7 +16,8 @@ $(function(){
 
     /**
      *           后台仅需要将数据改成上述的格式即可自动套用模版程伟html元素
-    */
+     */
+        //TODO 把要传入的数据写成上述的形式就行了，变量名最好不要改，如果变量名改了，要在下面把传入的变量名相应的改一下就行了，其余不变
 
     var nameTemplate = Handlebars.compile($('#info_template').html());
     $('.complex_messages').append(nameTemplate(nameData));
