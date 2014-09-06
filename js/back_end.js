@@ -8,7 +8,11 @@ $(function () {
                 $(this).addClass('active');
             }
 
-            /** jpage **/
+            /**
+             * 下面是翻页功能
+             * containID是引用jpage的容器,将后面的值改成需要引用翻页功能的大容器的id即可
+             * 其余的不要做改动
+             */
             selector.find('.jpage_body').attr('id','itemContainer');
             selector.find('.jpage_content').attr('id','content');
             selector.siblings().find('.jpage_body').removeAttr('id');

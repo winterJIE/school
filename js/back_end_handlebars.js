@@ -14,6 +14,10 @@ $(function(){
         {"achieve":"热烈祝贺XX同学获取市第一名",'dataId':212},{"achieve":"热烈祝贺XX同学获取市第一名",'dataId':213},
         {"achieve":"热烈祝贺XX同学获取市第一名",'dataId':214}];
 
+    /**
+     *           后台仅需要将数据改成上述的格式即可自动套用模版程伟html元素
+    */
+
     var nameTemplate = Handlebars.compile($('#info_template').html());
     $('.complex_messages').append(nameTemplate(nameData));
 
