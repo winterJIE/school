@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="../css/css/back_end_MS.css"/>
     <link rel="stylesheet" href="../css/css/back_end_dialog.css"/>
     <link rel="stylesheet" href="../css/lib/bootstrap-3.0.3/css/bootstrap.css"/>
+    <!-- markitup style -->
+    <link rel="stylesheet" type="text/css" href="../js/lib/markitup/markitup/sets/default/style.css">
+    <link rel="stylesheet" type="text/css" href="../js/lib/markitup/markitup/skins/markitup/style.css">
 
     <script type="text/javascript" src="../js/lib/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../js/detail.js"></script>
     <script type="text/javascript" src="../js/back_end.js"></script>
+    <!-- Jpage script below -->
     <script src="../js/lib/jPages.js"></script>
+    <!-- MarkItUp script below -->
+    <script type="text/javascript" src="../js/lib/markitup/markitup/jquery.markitup.js"></script>
+    <script type="text/javascript" src="../js/lib/markitup/markitup/sets/default/set.js"></script>
+    <!-- handelbarsJS below -->
     <script type="text/javascript" src="../js/lib/tabifier.js"></script>
     <script type="text/javascript" src="../js/lib/handlebars-1.0.0.beta.6.js"></script>
     <script id="info_template" type="text/x-handlebars-template">
@@ -1590,7 +1598,7 @@
                 <div class="form-group">
                     <label for="inputPassword3" class="col-sm-2 control-label yipin_label">正文</label>
                     <div class="col-sm-10">
-                        <textarea name='mainText' class="form-control" rows="3"></textarea>
+                        <textarea name='mainText' type="text" class="form-control markitup_module"></textarea>
                     </div>
                 </div>
 
@@ -1721,7 +1729,7 @@
                 <div class="form-group">
                     <label for=" " class="col-sm-2 control-label yipin_label">正文：</label>
                     <div class="col-sm-10">
-                        <input name='passNumber' type="password" class="form-control" id=" " placeholder="">
+                        <textarea name='mainText' type="text" class="form-control markitup_module"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
@@ -1800,7 +1808,7 @@
                 <div class="form-group">
                     <label for=" " class="col-sm-1 control-label yipin_label">正文：</label>
                     <div class="col-sm-10">
-                        <input name='mainText' type="text" class="form-control" id=" "/>
+                        <textarea name='mainText' type="text" class="form-control markitup_module"></textarea>
                     </div>
                 </div>
 

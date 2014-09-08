@@ -26,8 +26,8 @@ $(function () {
         });
     }
 
-
-    /** handlebarsJS **/
+<!-- lead the MarkItUp -->
+    $('.markitup_module').markItUp(mySettings);
 
 
     <!-- adding -->

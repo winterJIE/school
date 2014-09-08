@@ -426,7 +426,8 @@
 }
 
 .yipin_login textarea{
-    width: 70%;
+    width: 96%;
+    height: 140px !important;
     resize:none;
 }
 .create_para{
