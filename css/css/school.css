@@ -666,3 +666,206 @@ th {
   color: #4d4d4d;
 }
 /*# sourceMappingURL=school.css.map */
+
+
+/** index sign up and log in**/
+.index_signup,.index_login{
+    position: fixed;
+    width: 70%;
+    z-index: 999;
+    margin: 0 auto;
+    left: 15%;
+    top: 80px;
+    background-color: #fff;
+}
+.index_signup_header{
+    width: 100%;
+    height: 28px;
+    margin: 0;
+    padding: 8px 0;
+    background-color: #c22d2f;
+}
+.index_signup_title{
+    float: left;
+    width: 40%;
+    margin: 2px 2%;
+    font: 1.4em 'microsoft yahei';
+    color: #fff;
+}
+.index_close{
+    background: url("../../img/index/close_03.jpg");
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 3px 2%;
+    cursor: pointer;
+}
+
+
+.index_signup_frame{
+    float: left;
+    width: 42%;
+    height: auto;
+    margin: 0;
+    padding: 5% 4%;
+    text-align: center;
+}
+.index_signup_frame h2{
+    text-align: center;
+    font: 2em 'microsoft yahei';
+    color: #4c4c4c;
+    letter-spacing: 2em;
+}
+.input_frame{
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.email_logo{
+    float: left;
+    background: url("../../img/index/index_log_07.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 9%;
+    height: 45px;
+}
+.account_logo{
+    float: left;
+    background: url("../../img/index/index_log_15.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 9%;
+    height: 45px;
+}
+.signup_input{
+    float: right;
+    width: 86%;
+    height: 44px;
+    padding: 0;
+
+}
+.signup_input input{
+    width: 98%;
+    height: 38px;
+    border:2px solid #e6e6e6;
+    font: 1.3em 'microsoft yahei';
+    text-indent: 0.6em;
+}
+
+.passwd_logo{
+    float: left;
+    background: url("../../img/index/index_log_18.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 9%;
+    height: 45px;
+}
+.next_signup{
+    width: 40%;
+    height: 40px;
+    float: left;
+    padding-left: 10%;
+    font: 14px 'microsoft yahei';
+    color: #b2b2b2;
+}
+.next_signup input,.account_agreement input{
+    width: 16px;
+    height: 16px;
+}
+.forget_passwd{
+    float: right;
+    width: 20%;
+    font: 14px 'microsoft yahei';
+    color: #4fba9d;
+
+}
+.account_agreement{
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    padding:0;
+    font: 14px 'microsoft yahei';
+    color: #b2b2b2;
+}
+.account_agreement a{
+    color: #4fba9d;
+}
+.signup_submit{
+    width: 98%;
+    height: 48px;
+}
+.signup_submit input{
+    width: 98%;
+    height: 46px;
+    background-color: #c22d2f;
+    border-radius: 2px;
+    font: 1.6em 'microsoft yahei';
+    color: #fff;
+    letter-spacing: 4em;
+    outline: 0;
+    border:0;
+
+}
+
+.index_other_signup{
+    float: right;
+    width: 36%;
+    height: auto;
+    overflow: hidden;
+    padding: 7% 4%;
+    margin: 0;
+    text-align: center;
+}
+.other_way{
+    margin: 28px auto;
+    font: 1.4em 'microsoft yahei';
+    color: #4c4c4c;
+}
+.other_way a{
+    font: 1.6em 'microsoft yahei';
+    color: #2f8fb6;
+}
+.qq_signup,.weibo_login{
+    width: 50%;
+    height: 40px;
+    margin: 20px auto;
+    padding: 0;
+    font:1.3em 'microsoft yahei';
+    color: #fff;
+    text-indent: 1px;
+}
+.qq_signup button{
+    background-color: #E55647;
+}
+.weibo_login button{
+    background-color: #2f91b8;
+}
+.index_other_signup button{
+    width: 100%;
+    height: 100%;
+    border:0;
+    outline: 0;
+    border-radius: 2px;
+}
+
+
+
+
+.mask {
+    position: fixed;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+
+.hide{
+    display: none;
+}

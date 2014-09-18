@@ -372,9 +372,9 @@ a:hover{
 }
 
 .index_footer_copyright{
-    width: 100%;
+    width: 80%;
     font:10px 'microsoft yahei';
     color: #3a3a3a;
     background-color: #3f0202;
-    padding: 0 172px;
+    padding: 0 10%;
 }

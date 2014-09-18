@@ -85,3 +85,27 @@ $(function () {
 $(function(){
     $('.index_slide .carousel-inner img').css({'width':$('body').width(),'margin':0})
 });
+
+/** 注册登录弹出窗效果 **/
+$(function(){
+    var mask=$('.mask');
+    $('.course_detail_header .login').on('click',function(){
+        $('.index_signup').removeClass('hide');
+        mask.removeClass('hide');
+        $('.index_login').addClass('hide');
+    });
+    $('.course_detail_header .signup').on('click',function(){
+        $('.index_login').removeClass('hide');
+        mask.removeClass('hide');
+        $('.index_signup').addClass('hide');
+    });
+    $('.index_signup .index_close').on('click',function(){
+        $('.index_signup').addClass('hide');
+        mask.addClass('hide');
+    })
+    $('.index_login .index_close').on('click',function(){
+        $('.index_login').addClass('hide');
+        mask.addClass('hide');
+    })
+
+});
