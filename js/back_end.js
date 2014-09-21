@@ -276,17 +276,22 @@ $(function () {
         console.log(data);
         e.preventDefault();
         url='';         /** 根据后台的规律拼出来的 **/
-        sendData(data,url);
+        sendData(data,url,$(this));
+        $(this).closest('.yidialog').addClass('hide');
+        $('.mask').addClass('hide');
     });
 
-    function sendData(data,url){
+    function sendData(data,url,buttonClass){
         $.ajax({
             url:'',  /** 这里的url是后台给的 **/        //TODO 后台处理的url写这里
             data:data,
-            dataType:'json',
             success:function(){
+                console.log('abc'),
+                buttonClass.closest('.yidialog').addClass('hide');
+                $('.mask').addClass('hide');
+            },
+            dataType:'json'
 
-            }
         })
     }
 });
