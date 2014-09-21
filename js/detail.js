@@ -109,3 +109,11 @@ $(function(){
     })
 
 });
+
+/**      主页窗口切换 **/
+$(function(){
+    $('.subj_list li').on('click',function(){
+        var li_index=$(this).index();
+        $('.index_subj_show>div').eq(li_index).removeClass('hide').siblings().addClass('hide')
+    })
+})
