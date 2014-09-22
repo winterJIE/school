@@ -218,6 +218,7 @@ $(function () {
         var tar = $('.yipin_about_fouth');
         tar.find('.yi_pin_text').text('编辑');
         tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
+        tar.attr('popout_num',$(this).closest('tr').index());
         $('.mask').removeClass('hide');
     });
 
@@ -225,6 +226,7 @@ $(function () {
         var tar = $('.yipin_about_fouth');
         tar.find('.yi_pin_text').text('添加');
         tar.removeClass('hide');
+
         $('.mask').removeClass('hide');
     });
 
@@ -233,6 +235,7 @@ $(function () {
         var tar = $('.yipin_about_third');
         tar.find('.yi_pin_text').text('编辑');
         tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
+        tar.attr('popout_num',$(this).closest('tr').index());
         $('.mask').removeClass('hide');
     });
 
@@ -241,6 +244,7 @@ $(function () {
         var tar = $('.yipin_about_second');
         tar.find('.yi_pin_text').text('编辑');
         tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
+        tar.attr('popout_num',$(this).closest('tr').index());
         $('.mask').removeClass('hide');
     });
 
@@ -249,6 +253,7 @@ $(function () {
         var tar = $('.yipin_about_first');
         tar.find('.yi_pin_text').text('编辑');
         tar.removeClass('hide').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
+        tar.attr('popout_num',$(this).closest('tr').index());
         $('.mask').removeClass('hide');
     });
 
@@ -277,16 +282,13 @@ $(function () {
         e.preventDefault();
         url='';         /** 根据后台的规律拼出来的 **/
         sendData(data,url,$(this));
-        $(this).closest('.yidialog').addClass('hide');
-        $('.mask').addClass('hide');
     });
 
     function sendData(data,url,buttonClass){
         $.ajax({
             url:'',  /** 这里的url是后台给的 **/        //TODO 后台处理的url写这里
             data:data,
-            success:function(){
-                console.log('abc'),
+            success:function(result){
                 buttonClass.closest('.yidialog').addClass('hide');
                 $('.mask').addClass('hide');
             },
@@ -294,4 +296,26 @@ $(function () {
 
         })
     }
+
+    /** 提交表单后数据变化 **/
+    function dataChange(tableNum,popoutClass){
+        $(popoutClass+' button').on('click',function(){
+            $('.about_us .tab_column').eq(tableNum).find('tr').eq($(this).closest('.yidialog').attr('popout_num')).find('td').eq(0)
+                .html($(this).closest('form').find('input[type=text]').eq(0).val())
+                .siblings('td').eq(0).html($(this).closest('form').find('input[type=text]').eq(1).val());
+            $(this).closest('.yidialog').addClass('hide');
+            $('.mask').addClass('hide');
+        })
+    }
+
+    $('.yipin_about_zero button').on('click',function(){
+        $('.about_us_table tr').eq(1).find('td').eq(1).html($(this).closest('form').find('input[type=text]').val());
+        $(this).closest('.yidialog').addClass('hide');
+        $('.mask').addClass('hide');
+    });
+
+    dataChange(1,'.yipin_about_first');
+    dataChange(2,'.yipin_about_second');
+    dataChange(3,'.yipin_about_third');
+    dataChange(4,'.yipin_about_fouth');
 });
