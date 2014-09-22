@@ -430,6 +430,9 @@
     height: 140px !important;
     resize:none;
 }
+.yipin_course_source tbody textarea{
+    height: 50px !important;
+}
 .create_para{
     background-color: #ffffff;
     margin: 10px 20px;

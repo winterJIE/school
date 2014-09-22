@@ -23,8 +23,88 @@ $(function () {
             });
 
 
+
+            /** 表单提交数据修改 切换页面后的事件绑定 **/
+            dataChange('.about_us .tab_column',1,'.yipin_about_first');
+            dataChange('.about_us .tab_column',2,'.yipin_about_second');
+            dataChange('.about_us .tab_column',3,'.yipin_about_third');
+            dataChange('.about_us .tab_column',4,'.yipin_about_fouth');
+            dataChange('.back_end_index .tab_column',0,'.yipin_index_first');
+            dataChange('.back_end_index .tab_column',1,'.yipin_index_second');
+            dataChange('.back_end_index .tab_column',2,'.yipin_index_third');
+            dataChange_2('.sishu_info table',0,'.outstanding_source');
+            dataChange_2('.yipin_messages table',0,'.outstanding_source');
+            dataChange_2('.teach_strength table',0,'.teach_strength_source');
+            dataChange_2('.teach_achieve table',0,'.outstanding_source');
+
+            /** 成员管理表单提交数据修改 **/
+            $('.yipin_chengyuanguanli .member_save').on('click',function(){
+                $('.managing_member_table').find('tr').eq($(this).closest('.yidialog').attr('popout_num'))
+                    .find('td').eq(1).html($(this).closest('form').find('input').eq(0).val());
+                $(this).closest('.yidialog').addClass('hide');
+                $('.mask').addClass('hide');
+            });
+            /** 优秀学员表单提交数据修改 **/
+            $('.outstanding_source button').on('click',function(){
+                $('.outstandHandle').find('tr').eq($(this).closest('.yidialog').attr('popout_num'))
+                    .find('td').eq(0).html($(this).closest('form').find('input').eq(0).val());
+                $(this).closest('.yidialog').addClass('hide');
+                $('.mask').addClass('hide');
+            })
+
+            /** 一品课程表单提交数据修改 **/
+            $('.yipin_course_source button').on('click',function(){
+                $('.yipin_course').find('tr').eq($(this).closest('.yidialog').attr('popout_num'))
+                    .find('td').eq(2).html($(this).closest('form').find('input').eq(0).val());
+                $(this).closest('.yidialog').addClass('hide');
+                $('.mask').addClass('hide');
+            })
+
+            /** 一品课程表单提交数据修改 **/
+            $('.yipin_resource button').on('click',function(){
+                $('.back_yipin_info').find('tr').eq($(this).closest('.yidialog').attr('popout_num'))
+                    .find('td').eq(2).html($(this).closest('form').find('input').eq(0).val());
+                $(this).closest('.yidialog').addClass('hide');
+                $('.mask').addClass('hide');
+            })
+
+            /** 关于一品表单提交数据修改 **/
+            $('.yipin_about_zero button').on('click',function(){
+                $('.about_us_table tr').eq(1).find('td').eq(1).html($(this).closest('form').find('input[type=text]').val());
+                $(this).closest('.yidialog').addClass('hide');
+                $('.mask').addClass('hide');
+            });
+
+
         });
     }
+
+    /** 提交表单后页面数据变化 **/
+    function dataChange(tableClass,tableNum,popoutClass){
+        $(popoutClass+' button').on('click',function(){
+            $(tableClass).eq(tableNum).find('tr').eq($(this).closest('.yidialog').attr('popout_num')).find('td').eq(0)
+                .html($(this).closest('form').find('input').eq(0).val())
+                .siblings('td').eq(0).html($(this).closest('form').find('input').eq(1).val())
+                .siblings('td').eq(1).html($(this).closest('form').find('input').eq(2).val());
+            $(this).closest('.yidialog').addClass('hide');
+            $('.mask').addClass('hide');
+        })
+    }
+    function dataChange_2(tableClass,tableNum,popoutClass){
+        $(popoutClass+' button').on('click',function(){
+            $(tableClass).eq(tableNum).find('tr').eq($(this).closest('.yidialog').attr('popout_num')).find('td').eq(0)
+                .html($(this).closest('form').find('input').eq(0).val());
+            $(this).closest('.yidialog').addClass('hide');
+            $('.mask').addClass('hide');
+        })
+    }
+    dataChange('.about_us .tab_column',1,'.yipin_about_first');
+    dataChange('.about_us .tab_column',2,'.yipin_about_second');
+    dataChange('.about_us .tab_column',3,'.yipin_about_third');
+    dataChange('.about_us .tab_column',4,'.yipin_about_fouth');
+    dataChange('.back_end_index .tab_column',0,'.yipin_index_first');
+    dataChange('.back_end_index .tab_column',1,'.yipin_index_second');
+    dataChange('.back_end_index .tab_column',2,'.yipin_index_third');
 
 <!-- lead the MarkItUp -->
     $('.markitup_module').markItUp(mySettings);
@@ -106,7 +186,7 @@ $(function () {
     $('.member_deit').on('click', function(){
 
         $('.yipin_chengyuanguanli').removeClass('hide').find('.yi_pin_text').text('编辑')
-            .closest('.yidialog').attr('popout_num',$(this).closest('tr').index()+1)
+            .closest('.yidialog').attr('popout_num',$(this).closest('tr').index())
             .find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
@@ -137,14 +217,15 @@ $(function () {
     body.delegate('.outstanding_edit','click', function(){
 
         $('.outstanding_source').removeClass('hide').find('.yi_pin_text').text('编辑')
-            .closest('.yidialog').attr('popout_num',$(this).closest('tr').index()+1)
+            .closest('.yidialog').attr('popout_num',$(this).closest('tr').index())
             .find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
     $('.yipin_course_add').on('click', function(){
         $('.yipin_course_source').removeClass('hide').find('.yi_pin_text').text('编辑')
-            .closest('.yidialog').find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
+            .closest('.yidialog').attr('popout_num',$(this).closest('tr').index())
+            .find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
 
@@ -308,44 +389,8 @@ $(function () {
         })
     }
 
-    /** 提交表单后页面数据变化 **/
-    function dataChange(tableClass,tableNum,popoutClass){
-        $(popoutClass+' button').on('click',function(){
-            $(tableClass).eq(tableNum).find('tr').eq($(this).closest('.yidialog').attr('popout_num')).find('td').eq(0)
-                .html($(this).closest('form').find('input').eq(0).val())
-                .siblings('td').eq(0).html($(this).closest('form').find('input').eq(1).val())
-                .siblings('td').eq(1).html($(this).closest('form').find('input').eq(2).val());
-            $(this).closest('.yidialog').addClass('hide');
-            $('.mask').addClass('hide');
-        })
-    }
-    function dataChange_2(tableClass,tableNum,popoutClass){
-        $(popoutClass+' button').on('click',function(){
-            $(tableClass).eq(tableNum).find('tr').eq($(this).closest('.yidialog').attr('popout_num')).find('td').eq(0)
-                .html($(this).closest('form').find('input').eq(0).val());
-            $(this).closest('.yidialog').addClass('hide');
-            $('.mask').addClass('hide');
-        })
-    }
 
-    $('.yipin_about_zero button').on('click',function(){
-        $('.about_us_table tr').eq(1).find('td').eq(1).html($(this).closest('form').find('input[type=text]').val());
-        $(this).closest('.yidialog').addClass('hide');
-        $('.mask').addClass('hide');
-    });
 
-    dataChange('.about_us .tab_column',1,'.yipin_about_first');
-    dataChange('.about_us .tab_column',2,'.yipin_about_second');
-    dataChange('.about_us .tab_column',3,'.yipin_about_third');
-    dataChange('.about_us .tab_column',4,'.yipin_about_fouth');
-    dataChange('.back_end_index .tab_column',0,'.yipin_index_first');
-    dataChange('.back_end_index .tab_column',1,'.yipin_index_second');
-    dataChange('.back_end_index .tab_column',2,'.yipin_index_third');
-    dataChange_2('.sishu_info table',0,'.outstanding_source');
-    dataChange_2('.yipin_messages table',0,'.outstanding_source');
-    dataChange_2('.teach_strength table',0,'.teach_strength_source');
-    dataChange_2('.teach_achieve table',0,'.outstanding_source');
-    dataChange_2('.outstanding table',0,'.outstanding_source');
-    dataChange('.back_yipin_info table',0,'.yipin_resource');
-    dataChange_2('.managing_member table',0,'.yipin_chengyuanguanli');
+
+
 });
