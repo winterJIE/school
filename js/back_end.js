@@ -362,7 +362,7 @@ $(function () {
 
     $('.yipin_label+div').removeClass('col-sm-10').addClass('col-sm-8');
 
-    /** post data to back end **/
+    /** 表格向后台传递数据 **/
     $('.yidialog button[type=submit]').on('click',function(e){
         var result=$(this).parents('.yipin_form').serializeArray();
         var data_id=$(this).attr('data_id');
