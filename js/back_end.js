@@ -378,7 +378,7 @@ $(function () {
 
     function sendData(data,url,buttonClass){
         $.ajax({
-            url:'',  /** 这里的url是后台给的 **/        //TODO 后台处理的url写这里
+            url:'aaa.php',  /** 这里的url是后台给的 **/        //TODO 后台处理的url写这里
             data:data,
             success:function(result){
                 buttonClass.closest('.yidialog').addClass('hide');
