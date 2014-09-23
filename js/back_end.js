@@ -24,87 +24,118 @@ $(function () {
 
 
 
-            /** 表单提交数据修改 切换页面后的事件绑定 **/
-            dataChange('.about_us .tab_column',1,'.yipin_about_first');
-            dataChange('.about_us .tab_column',2,'.yipin_about_second');
-            dataChange('.about_us .tab_column',3,'.yipin_about_third');
-            dataChange('.about_us .tab_column',4,'.yipin_about_fouth');
-            dataChange('.back_end_index .tab_column',0,'.yipin_index_first');
-            dataChange('.back_end_index .tab_column',1,'.yipin_index_second');
-            dataChange('.back_end_index .tab_column',2,'.yipin_index_third');
-            dataChange_2('.sishu_info table',0,'.outstanding_source');
-            dataChange_2('.yipin_messages table',0,'.outstanding_source');
-            dataChange_2('.teach_strength table',0,'.teach_strength_source');
-            dataChange_2('.teach_achieve table',0,'.outstanding_source');
+            /** 以下为表单提交 **/
 
-            /** 成员管理表单提交数据修改 **/
-            $('.yipin_chengyuanguanli .member_save').on('click',function(){
-                $('.managing_member_table').find('tr').eq($(this).closest('.yidialog').attr('popout_num'))
-                    .find('td').eq(1).html($(this).closest('form').find('input').eq(0).val());
-                $(this).closest('.yidialog').addClass('hide');
-                $('.mask').addClass('hide');
-            });
-            /** 优秀学员表单提交数据修改 **/
-            $('.outstanding_source button').on('click',function(){
-                $('.outstandHandle').find('tr').eq($(this).closest('.yidialog').attr('popout_num'))
-                    .find('td').eq(0).html($(this).closest('form').find('input').eq(0).val());
-                $(this).closest('.yidialog').addClass('hide');
-                $('.mask').addClass('hide');
-            })
+            /** "主页"和"关于我们"页面的数据传递 **/
 
-            /** 一品课程表单提交数据修改 **/
-            $('.yipin_course_source button').on('click',function(){
-                $('.yipin_course').find('tr').eq($(this).closest('.yidialog').attr('popout_num'))
-                    .find('td').eq(2).html($(this).closest('form').find('input').eq(0).val());
-                $(this).closest('.yidialog').addClass('hide');
-                $('.mask').addClass('hide');
-            })
+            passData('.about_us .tab_column',1,'.yipin_about_first',syncData_index_and_about_us);
+            passData('.about_us .tab_column',2,'.yipin_about_second',syncData_index_and_about_us);
+            passData('.about_us .tab_column',3,'.yipin_about_third',syncData_index_and_about_us);
+            passData('.about_us .tab_column',4,'.yipin_about_fouth',syncData_index_and_about_us);
+
+            /** "关于我们"页面的数据传递 **/
+            passData("","",'.yipin_about_zero',syncData_about_zero);
+            passData('.back_end_index .tab_column',0,'.yipin_index_first',syncData_index_and_about_us);
+            passData('.back_end_index .tab_column',1,'.yipin_index_second',syncData_index_and_about_us);
+            passData('.back_end_index .tab_column',2,'.yipin_index_third',syncData_index_and_about_us);
+
+            /** “私塾资讯”、“综合资讯”、“师资力量”、“教学成绩”页面的数据传递 **/
+            passData('.sishu_info table',0,'.sishu_info_resource',syncData_other);
+            passData('.yipin_messages table',0,'.outstanding_source',syncData_other);
+            passData('.teach_strength table',0,'.teach_strength_source',syncData_other);
+            passData('.teach_achieve table',0,'.teach_achievement_edit',syncData_other);
+
+            /** “成员管理”页面的数据传递 **/
+            passData("","",'.yipin_chengyuanguanli',syncData_manage_member);
+
+            /** "优秀学员"页面的数据传递 **/
+            passData("","",'.outstanding_source',syncData_outstand_student);
+
+            /** "一品课程"页面的数据传递 **/
+            passData("","",'.yipin_course_source',syncData_yipin_course);
+
 
             /** 一品课程表单提交数据修改 **/
-            $('.yipin_resource button').on('click',function(){
-                $('.back_yipin_info').find('tr').eq($(this).closest('.yidialog').attr('popout_num'))
-                    .find('td').eq(2).html($(this).closest('form').find('input').eq(0).val());
-                $(this).closest('.yidialog').addClass('hide');
-                $('.mask').addClass('hide');
-            })
+            passData("","",'.yipin_resource',syncData_source);
 
-            /** 关于一品表单提交数据修改 **/
-            $('.yipin_about_zero button').on('click',function(){
-                $('.about_us_table tr').eq(1).find('td').eq(1).html($(this).closest('form').find('input[type=text]').val());
-                $(this).closest('.yidialog').addClass('hide');
-                $('.mask').addClass('hide');
-            });
 
 
         });
     }
 
-    /** 提交表单后页面数据变化 **/
-    function dataChange(tableClass,tableNum,popoutClass){
-        $(popoutClass+' button').on('click',function(){
-            $(tableClass).eq(tableNum).find('tr').eq($(this).closest('.yidialog').attr('popout_num')).find('td').eq(0)
-                .html($(this).closest('form').find('input').eq(0).val())
-                .siblings('td').eq(0).html($(this).closest('form').find('input').eq(1).val())
-                .siblings('td').eq(1).html($(this).closest('form').find('input').eq(2).val());
-            $(this).closest('.yidialog').addClass('hide');
-            $('.mask').addClass('hide');
+    /** “提交表单”的主函数 **/
+    function passData(tableClass,tableNum,popoutClass,syncFunc){
+        $(popoutClass+' button[type=submit]').on('click',function(e){
+            var obj=$(this);
+            var result=obj.parents('.yipin_form').serializeArray();
+            var data_id=obj.attr('data_id');
+            var data={
+                res:result,
+                id:data_id
+            };
+            console.log(data);
+            e.preventDefault();
+            url='';         /** 根据后台的规律拼出来的 **/
+            $.ajax({
+                url:'',  /** 这里的url是后台给的 **/        //TODO 后台处理的url写这里
+                data:data,
+                success:function(data){
+                    syncFunc(tableClass,tableNum,obj);
+                    obj.closest('.yidialog').addClass('hide');
+                    $('.mask').addClass('hide');
+                }
+            })
+
         })
     }
-    function dataChange_2(tableClass,tableNum,popoutClass){
-        $(popoutClass+' button').on('click',function(){
-            $(tableClass).eq(tableNum).find('tr').eq($(this).closest('.yidialog').attr('popout_num')).find('td').eq(0)
-                .html($(this).closest('form').find('input').eq(0).val());
-            $(this).closest('.yidialog').addClass('hide');
-            $('.mask').addClass('hide');
-        })
-    }
-    dataChange('.about_us .tab_column',1,'.yipin_about_first');
-    dataChange('.about_us .tab_column',2,'.yipin_about_second');
-    dataChange('.about_us .tab_column',3,'.yipin_about_third');
-    dataChange('.about_us .tab_column',4,'.yipin_about_fouth');
-    dataChange('.back_end_index .tab_column',0,'.yipin_index_first');
-    dataChange('.back_end_index .tab_column',1,'.yipin_index_second');
-    dataChange('.back_end_index .tab_column',2,'.yipin_index_third');
+
+    /** “主页”和“关于我们”数据同步的函数定义式 **/
+    var syncData_index_and_about_us=function(tableClass,tableNum,obj){
+        $(tableClass).eq(tableNum).find('tr').eq(obj.closest('.yidialog').attr('popout_num')).find('td').eq(0)
+            .html(obj.closest('form').find('input').eq(0).val())
+            .siblings('td').eq(0).html(obj.closest('form').find('input').eq(1).val())
+            .siblings('td').eq(1).html(obj.closest('form').find('input').eq(2).val());
+    };
+    /** “关于我们”第一个表格的数据同步的函数定义式 **/
+    var syncData_about_zero=function(tableClass,tableNum,obj){
+        $('.about_us_table tr').eq(1).find('td').eq(1).html(obj.closest('form').find('input[type=text]').val());
+        obj.closest('.yidialog').addClass('hide');
+        $('.mask').addClass('hide');
+    };
+    /** “私塾资讯”、“综合资讯”、“师资力量”、“教学成绩”数据同步的函数定义式 **/
+    var syncData_other=function(tableClass,tableNum,obj){
+            $(tableClass).eq(tableNum).find('tr').eq(obj.closest('.yidialog').attr('popout_num')).find('td').eq(0)
+                .html(obj.closest('form').find('input').eq(0).val());
+    };
+    /** “成员管理”数据同步的函数定义式 **/
+    var syncData_manage_member=function(tableClass,tableNum,obj){
+        $('.managing_member_table').find('tr').eq(obj.closest('.yidialog').attr('popout_num'))
+            .find('td').eq(1).html(obj.closest('form').find('input').eq(0).val());
+    };
+    /** “优秀成员”数据同步的函数定义式 **/
+    var syncData_outstand_student=function(tableClass,tableNum,obj){
+        $('.outstandHandle').find('tr').eq(obj.closest('.yidialog').attr('popout_num'))
+            .find('td').eq(0).html(obj.closest('form').find('input').eq(0).val());
+    };
+    /** “一品课程”数据同步的函数定义式 **/
+    var syncData_yipin_course=function(tableClass,tableNum,obj){
+        $('.yipin_course').find('tr').eq(obj.closest('.yidialog').attr('popout_num'))
+            .find('td').eq(2).html(obj.closest('form').find('input').eq(0).val());
+    };
+    /** “一品资源”数据同步的函数定义式 **/
+    var syncData_source=function(tableClass,tableNum,obj){
+        $('.back_yipin_info').find('tr').eq(obj.closest('.yidialog').attr('popout_num'))
+            .find('td').eq(2).html(obj.closest('form').find('input').eq(0).val());
+    };
+    passData('.back_end_index .tab_column',0,'.yipin_index_first',syncData_index_and_about_us);
+    passData('.back_end_index .tab_column',1,'.yipin_index_second',syncData_index_and_about_us);
+    passData('.back_end_index .tab_column',2,'.yipin_index_third',syncData_index_and_about_us);
+
+
+
+<!-- 数据传递部分结束 -->
+
+
 
 <!-- lead the MarkItUp -->
     $('.markitup_module').markItUp(mySettings);
@@ -215,9 +246,15 @@ $(function () {
     });
 
     body.delegate('.outstanding_edit','click', function(){
-
         $('.outstanding_source').removeClass('hide').find('.yi_pin_text').text('编辑')
             .closest('.yidialog').attr('popout_num',$(this).closest('tr').index())
+            .find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
+        $('.mask').removeClass('hide');
+    });
+
+    body.delegate('.syn_info_edit','click', function(){
+        $('.outstanding_source').removeClass('hide').find('.yi_pin_text').text('编辑')
+            .closest('.yidialog').attr('popout_num',$(this).closest('tr').index()+1)
             .find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
     });
@@ -361,36 +398,6 @@ $(function () {
 /** change the class  **/
 
     $('.yipin_label+div').removeClass('col-sm-10').addClass('col-sm-8');
-
-    /** 表格向后台传递数据 **/
-    $('.yidialog button[type=submit]').on('click',function(e){
-        var result=$(this).parents('.yipin_form').serializeArray();
-        var data_id=$(this).attr('data_id');
-        var data={
-            res:result,
-            id:data_id
-        };
-        console.log(data);
-        e.preventDefault();
-        url='';         /** 根据后台的规律拼出来的 **/
-        sendData(data,url,$(this));
-    });
-
-    function sendData(data,url,buttonClass){
-        $.ajax({
-            url:'',  /** 这里的url是后台给的 **/        //TODO 后台处理的url写这里
-            data:data,
-            success:function(result){
-                buttonClass.closest('.yidialog').addClass('hide');
-                $('.mask').addClass('hide');
-            },
-            dataType:'json'
-
-        })
-    }
-
-
-
 
 
 });
