@@ -41,7 +41,7 @@ $(function () {
 
             /** “私塾资讯”、“综合资讯”、“师资力量”、“教学成绩”页面的数据传递 **/
             passData('.sishu_info table',0,'.sishu_info_resource',syncData_other);
-            passData('.yipin_messages table',0,'.outstanding_source',syncData_other);
+            passData('.yipin_messages table',0,'.yipin_message_popout',syncData_other);
             passData('.teach_strength table',0,'.teach_strength_source',syncData_other);
             passData('.teach_achieve table',0,'.teach_achievement_edit',syncData_other);
 
@@ -253,7 +253,7 @@ $(function () {
     });
 
     body.delegate('.syn_info_edit','click', function(){
-        $('.outstanding_source').removeClass('hide').find('.yi_pin_text').text('编辑')
+        $('.yipin_message_popout').removeClass('hide').find('.yi_pin_text').text('编辑')
             .closest('.yidialog').attr('popout_num',$(this).closest('tr').index()+1)
             .find('button[type=submit]').attr('data_id',$(this).attr('data_id'));
         $('.mask').removeClass('hide');
